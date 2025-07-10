@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = "Tare Robotics"
-copyright = "2025, Tare Robotics team"
+copyright = "2025, Tare Robotics"
 author = "Ji Zhang, Chao Cao"
 
 
