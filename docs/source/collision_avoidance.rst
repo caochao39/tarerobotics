@@ -19,3 +19,11 @@ Alternatively, the collision avoidance planner can take joystick input. This is 
 ||                                ||                                |
 ||     Caption for image 1        ||     Caption for image 2        |
 +---------------------------------+---------------------------------+
+
+|pic1| any text |pic2|
+
+.. |pic1| image:: images/image15.png
+   :width: 45%
+
+.. |pic2| image:: images/image22.png
+   :width: 45%
