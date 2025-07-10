@@ -1,3 +1,6 @@
+SLAM
+----
+
 The SLAM module conducts scan matching to incrementally build a map of the traversed environment and at the same time estimates the vehicle pose on the map. The SLAM module extracts and matches planner and edge points. Measurements from IMU are pre-integrated to the front of the scan matching pose and used for motion undistortion of the raw lidar scans. The SLAM module can operate in mapping mode to build a map from scratch and in localization mode to load a prior map and localize on the map.
 
 Launch the system in base mode and users should see vehicle pose and registered scans in RVIZ. The vehicle pose is published as ROS Odometry typed messages on the ‘/state_estimation’ topic and the registrated scans are published as ROS PointCloud2 typed messages on the ‘/registered_scan’ topic. The registered scans are further converted to the vehicle frame and published on the ‘/sensor_scan’ topic. The corresponding vehicle pose is published on the ‘/state_estimation_at_scan’ topic, where each pose message corresponds to a scan message with the same timestamp.

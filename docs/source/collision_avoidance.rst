@@ -1,3 +1,6 @@
+Collision Avoidance
+-------------------
+
 The collision avoidance planner warrants safety in reaching waypoints that are sent by high-level planners. It computes and follows collision-free paths that lead to the waypoint. The collision avoidance planner pre-computes a motion primitive library and associates the motion primitives to 2D locations in the vicinity of the vehicle. The motion primitives are modeled as Monte Carlo samples and organized in groups. In real-time, when a location is occupied by obstacles, the planner can determine motion primitives that collide with the obstacle within milliseconds. The planner then selects the group of motion primitives with the maximum likelihood toward the waypoint. The traversability is determined by the terrain characteristics. The collision avoidance planner takes in the terrain map from the terrain traversability analysis module (see Terrain Traversability Analysis section).
 
 Launch the system in base mode and use the ‘Waypoint’ button in RVIZ to set a waypoint in the vicinity of the vehicle. Make sure the waypoint is reachable. Users should see yellow collision-free paths in RVIZ while the vehicle approaches the waypoint.
