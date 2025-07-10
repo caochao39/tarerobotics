@@ -15,8 +15,18 @@ Alternatively, the collision avoidance planner can take joystick input. This is 
 
 |pic1| |pic2|
 
-.. |pic1| image:: images/image15.jpg
+.. |pic1| figure:: images/image15.jpg
    :width: 55%
 
-.. |pic2| image:: images/image21.jpg
+   Physical joystick controller, operate the right joystick to test collision avoidance.
+
+.. |pic2| figure:: images/image21.jpg
    :width: 30%
+
+   Virtual joystick in RVIZ.
+
+The speed is set in the 'src/base_autonomy/local_planner/launch/local_planner.launch' file. The 'maxSpeed' defines the maximum speed in all modes and 'autonomySpeed' defines the speed in waypoint mode. When navigating in tight areas, reduce both speeds to 0.75 or 0.5 (m/s).
+
+In indoor environments, to avoid low obstacles, users can reduce 'obstacleHeightThre' in the 'src/base_autonomy/local_planner/launch/local_planner.launch' file from 0.05 to as small as 0.015 or 0.02. The vehicle will avoid obstacles at 2-2.5cm above ground. Please set the threshold higher (0.1-0.15) in outdoor environments.
+
+To write custom code to send waypoints to the system, please refer to the example code in the ‘src/base_autonomy/waypoint_example’ package. **Note that the vehicle will only navigate to the waypoint when in waypoint mode. Click the ‘Resume Navigation to Goal’ button in RVIZ to switch to waypoint mode.**
