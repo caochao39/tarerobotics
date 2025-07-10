@@ -12,7 +12,7 @@ Alternatively, the collision avoidance planner can take joystick input. This is 
 
 +---------------------------------+---------------------------------+
 || .. figure:: images/image15.png || .. figure:: images/image22.png |
-|| :height: 200px                 || :height: 200px                 |
+||     :height: 200px             ||     :height: 200px             |
 ||                                ||                                |
-|| Caption for image 1            || Caption for image 2            |
+||     Caption for image 1        ||     Caption for image 2        |
 +---------------------------------+---------------------------------+
