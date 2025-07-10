@@ -11,6 +11,7 @@ T-Bot is a versatile education and research platform equipped with a `Livox Mid3
 The autonomy stack shares a three-tier system architecture, containing a SLAM module, a route planner, an exploration planner, and a base autonomy system, where the base autonomy system includes fundamental navigation modules for terrain traversability analysts, collision avoidance, and waypoint following. The system overall is capable of taking a goal point and navigating the vehicle autonomously to the goal point as well as exploring an environment and building a map along the way. Alternatively, the system allows users to use a joystick controller to guide the navigation while the system itself is in charge of collision avoidance.
 
 .. image:: images/image12.jpg
+    
     Three-tier autonomy stack.
 
 Please refer to the ‘Quick Start Guide’ section to get familiar with the system operations. To try our system in simulation on any computer, see the `Simulation Setup <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform?tab=readme-ov-file#simulation-setup>`_ section in the GitHub repository.
