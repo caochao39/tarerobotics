@@ -8,7 +8,7 @@ Launch the system in base mode. In RVIZ, click ‘Pannels->Displays’ and toggl
 |pic1| |pic2|
 
 .. |pic1| image:: images/image1.png
-   :width: 40% 
+   :width: 20% 
 
 .. |pic2| image:: images/image13.png
    :width: 40%
