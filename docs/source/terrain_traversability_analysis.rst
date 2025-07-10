@@ -8,9 +8,9 @@ Launch the system in base mode. In RVIZ, click ‘Pannels->Displays’ and toggl
 |pic1| |pic2|
 
 .. |pic1| image:: images/image1.png
-   :height: 40% 
+   :width: 40% 
 
 .. |pic2| image:: images/image13.png
-   :height: 40%
+   :width: 40%
 
 Left: terrain map in 10m area around the vehicle. Right: extended terrain map in 40m area. In both figures, green points are traversable and red points are obstacles.
