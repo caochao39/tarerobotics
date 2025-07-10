@@ -6,7 +6,7 @@ The path following module uses pure-pursuit path tracking. Given a path computed
 .. figure:: images/image10.png
     :height: 660
     :width: 1990
-    :scale: 80 %
+    :scale: 100 %
 
     The vehicle tracks the look-ahead point on the path to follow the path.
 
