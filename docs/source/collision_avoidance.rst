@@ -15,15 +15,15 @@ Alternatively, the collision avoidance planner can take joystick input. This is 
 
 |pic1| |pic2|
 
-.. |pic1| figure:: images/image15.jpg
+.. |pic1| image:: images/image15.jpg
    :width: 55%
 
-   Physical joystick controller, operate the right joystick to test collision avoidance.
+   
 
-.. |pic2| figure:: images/image21.jpg
+.. |pic2| image:: images/image21.jpg
    :width: 30%
 
-   Virtual joystick in RVIZ.
+Left: Physical joystick controller, operate the right joystick to test collision avoidance. Right: Virtual joystick in RVIZ.
 
 The speed is set in the 'src/base_autonomy/local_planner/launch/local_planner.launch' file. The 'maxSpeed' defines the maximum speed in all modes and 'autonomySpeed' defines the speed in waypoint mode. When navigating in tight areas, reduce both speeds to 0.75 or 0.5 (m/s).
 
