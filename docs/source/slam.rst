@@ -21,17 +21,17 @@ If the point cloud file is large, the system will take several seconds to a minu
 Then, click the point cloud to select it in the ‘DB Tree’ window and click the ‘Subsample a point cloud’ icon in the toolbar. For indoor environments, we recommend downsampling the point cloud to 0.1m resolution. For outdoor environments, use 0.2m. Click ‘Ok’ to downsample.
 
 .. image:: images/image8.png
-    :width: 35 %
+    :width: 30 %
 
 Select the newly created downsampled point cloud in the ‘DB Tree’ window and save it to file. Make sure to select ‘ASCII’ cloud at the lower right corner, set the file name, and ‘Save’.
 
 .. image:: images/image14.png
-    :width: 35 %
+    :width: 45 %
 
 Then, in the next window, keep the default setting and click ‘Ok’ to save the file. Now, you can use the downsampled point cloud as the prior map.
 
 .. image:: images/image4.png
-    :width: 35 %
+    :width: 30 %
 
 To check out the save point cloud and trajectory files, also use CloudCompare. Click the ‘EDL’ icon to add artificial shading. Point clouds from indoor environments often contain ceilings. To reveal the inside of the point cloud, click the point cloud to select it in the ‘DB Tree’ window and click the ‘Cross Section’ icon. Use mouse to pull the boundaries of the cross section and remove the ceiling. Now, you can check out the inside of the point cloud and the trajectory.
 
