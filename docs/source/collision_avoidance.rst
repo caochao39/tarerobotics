@@ -18,9 +18,6 @@ Alternatively, the collision avoidance planner can take joystick input. This is 
 .. |pic2| image:: images/image21.jpg
    :width: 30%
 
-Notes
------
-
 The speed is set in the `src/base_autonomy/local_planner/launch/local_planner.launch <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/base_autonomy/local_planner/launch/local_planner.launch>`_ file. The ``maxSpeed`` defines the maximum speed in all modes and ``autonomySpeed`` defines the speed in waypoint mode. When navigating in tight areas, reduce both speeds to 0.75 or 0.5 (m/s).
 
 In indoor environments, to avoid low obstacles, users can reduce ``obstacleHeightThre`` in the `src/base_autonomy/local_planner/launch/local_planner.launch <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/base_autonomy/local_planner/launch/local_planner.launch>`_ file from 0.05 to as small as 0.015 or 0.02. The vehicle will avoid obstacles at 2-2.5cm above ground. Please set the threshold higher (0.1-0.15) in outdoor environments.
