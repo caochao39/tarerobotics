@@ -11,7 +11,7 @@ The autonomy stack shares a three-tier system architecture, containing a SLAM mo
 .. image:: images/image12.png
     :width: 50%
 
-Please refer to the `‘Quick Start Guide’ <https://tarerobotics.readthedocs.io/en/latest/quick_start_guide.html>`_ section to get familiar with the system operations. To try our system in simulation on any computer, refer to the `‘Simulation System Setup’ <https://tarerobotics.readthedocs.io/en/latest/simulation_system_setup.html>`_ section.
+Please refer to the `Quick Start Guide <https://tarerobotics.readthedocs.io/en/latest/quick_start_guide.html>`_ section to get familiar with the system operations. To try our system in simulation on any computer, refer to the `Simulation System Setup <https://tarerobotics.readthedocs.io/en/latest/simulation_system_setup.html>`_ section.
 
 Contents
 --------
