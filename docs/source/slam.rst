@@ -8,7 +8,7 @@ Launch the system in base mode and users should see vehicle pose and registered 
 .. image:: images/image9.png
     :width: 75 %
 
-To save a point cloud file during a run, set 'savePcd = true' in the 'src/base_autonomy/ visualization_tools/launch/visualization_tools.launch' file. A 'pointcloud_xxx.txt' file is saved in the 'src/base_autonomy/vehicle_simulator/log' folder, where 'xxx' is the timestamp. To save a trajectory file, set 'saveTraj = true' and a 'trajectory_xxx.txt' file is saved. The format is described in the 'readme.txt' file in the same folder. Once a point cloud file is saved, users can start the SLAM module in localization mode. Copy the point cloud file to the desktop and rename it 'pointcloud_local.txt'. Then, in the 'src/slam/arise_slam_mid360/config/livox_mid360.yaml' file, set 'local_mode = true' and adjust 'init_x', 'init_y', 'init_z', and 'init_yaw' for the start pose. We recommend keeping the values zero by default and marking the vehicle starting pose on the ground during the mapping run. Then, start the localization run from the same pose. Upon start of the localization run, the prior map should be displayed in RVIZ as the gray points. The white points on the left are registered scans localized on the prior map.
+To save a point cloud file during a run, set ``savePcd = true`` in the `src/base_autonomy/ visualization_tools/launch/visualization_tools.launch <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/base_autonomy/visualization_tools/launch/visualization_tools.launch>`_ file. A 'pointcloud_xxx.txt' file is saved in the `src/base_autonomy/vehicle_simulator/log <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/tree/jazzy/src/base_autonomy/vehicle_simulator/log>`_ folder, where 'xxx' is the timestamp. To save a trajectory file, set ``saveTraj = true`` and a 'trajectory_xxx.txt' file is saved. The format is described in the 'readme.txt' file in the same folder. Once a point cloud file is saved, users can start the SLAM module in localization mode. Copy the point cloud file to the desktop and rename it 'pointcloud_local.txt'. Then, in the `src/slam/arise_slam_mid360/config/livox_mid360.yaml <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/slam/arise_slam_mid360/config/livox_mid360.yaml>`_ file, set ``local_mode = true`` and adjust ``init_x``, ``init_y``, ``init_z``, and ``init_yaw`` for the starting pose. We recommend keeping the values zero as default and marking the vehicle starting pose on the ground during the mapping run. Then, start the localization run from the same pose. Upon start of the localization run, the prior map should be displayed in RVIZ as the gray points. The white points on the left are registered scans localized on the prior map.
 
 .. image:: images/image2.png
     :width: 75 %
@@ -26,7 +26,7 @@ Then, click the point cloud to select it in the ‘DB Tree’ window and click t
 Select the newly created downsampled point cloud in the ‘DB Tree’ window and save it to file. Make sure to select ‘ASCII’ cloud at the lower right corner, set the file name, and ‘Save’.
 
 .. image:: images/image14.png
-    :width: 45 %
+    :width: 55 %
 
 Then, in the next window, keep the default setting and click ‘Ok’ to save the file. Now, you can use the downsampled point cloud as the prior map.
 
