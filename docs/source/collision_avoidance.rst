@@ -13,7 +13,7 @@ Alternatively, the collision avoidance planner can take joystick input. This is 
 |pic1| |pic2|
 
 .. |pic1| image:: images/image15.jpg
-   :width: 55% 
+   :width: 25% 
 
 .. |pic2| image:: images/image21.jpg
    :width: 30%
