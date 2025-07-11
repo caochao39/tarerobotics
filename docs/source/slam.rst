@@ -6,12 +6,12 @@ The SLAM module conducts scan matching to incrementally build a map of the trave
 Mapping Mode
 ------------
 
-Launch the system in base mode and users should see vehicle pose and registered scans in RVIZ. The vehicle pose is published as ROS Odometry typed messages on the ‘/state_estimation’ topic (coordinate frame in the figure) and the registered scans are published as ROS PointCloud2 typed messages on the ‘/registered_scan’ topic (white points in the figure). The registered scans are further converted to the vehicle frame and published on the ‘/sensor_scan’ topic. The corresponding vehicle pose is published on the ‘/state_estimation_at_scan’ topic, where each pose message corresponds to a scan message with the same timestamp.
+Launch the system in base mode and users should see vehicle pose and registered scans in RVIZ. The vehicle pose is published as ROS Odometry typed messages on the ‘/state_estimation’ topic (coordinate frame in the figure) and the registered scans are published as ROS PointCloud2 typed messages on the ‘/registered_scan’ topic (white points in the figure). When the vehicle moves, users should see the vehicle pose moving in RVIZ and the registered scans covering newly traversed areas. The registered scans are further converted to the vehicle frame and published on the ‘/sensor_scan’ topic. The corresponding vehicle pose is published on the ‘/state_estimation_at_scan’ topic, where each pose message corresponds to a scan message with the same timestamp.
 
 .. image:: images/image9.png
     :width: 75 %
 
-To save a point cloud file during a run, set ``savePcd = true`` in the `'src/base_autonomy/ visualization_tools/launch/visualization_tools.launch' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/base_autonomy/visualization_tools/launch/visualization_tools.launch>`_ file. A 'pointcloud_xxx.txt' file is saved in the `'src/base_autonomy/vehicle_simulator/log' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/tree/jazzy/src/base_autonomy/vehicle_simulator/log>`_ folder, where 'xxx' is the timestamp. To save a trajectory file, set ``saveTraj = true`` and a 'trajectory_xxx.txt' file is saved. The format is described in the 'readme.txt' file in the same folder. 
+To save a point cloud file during a run, set ``savePcd = true`` in the `'src/base_autonomy/ visualization_tools/launch/visualization_tools.launch' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/base_autonomy/visualization_tools/launch/visualization_tools.launch>`_ file. A 'pointcloud_xxx.txt' file is saved in the `'src/base_autonomy/vehicle_simulator/log' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/tree/jazzy/src/base_autonomy/vehicle_simulator/log>`_ folder, where 'xxx' is the timestamp. To save a trajectory file, set ``saveTraj = true`` and a 'trajectory_xxx.txt' file is saved. The format is described in the 'readme.txt' file in the same folder.
 
 Localization Mode
 -----------------
@@ -41,7 +41,10 @@ Then, in the next window, keep the default setting and click ‘Ok’ to save th
 .. image:: images/image4.png
     :width: 35 %
 
-To check out the save point cloud and trajectory files, also use CloudCompare. Click the ‘EDL’ icon to add artificial shading. Point clouds from indoor environments often contain ceilings. To reveal the inside of the point cloud, click the point cloud to select it in the ‘DB Tree’ window and click the ‘Cross Section’ icon. Use mouse to pull the boundaries of the cross section and remove the ceiling. Now, you can check out the inside of the point cloud and the trajectory.
+Viewing Map
+------------
+
+To check out the save point cloud and trajectory files, also use `CloudCompare <https://www.danielgm.net/cc/>`_. Click the ‘EDL’ icon to add artificial shading. Point clouds from indoor environments often contain ceilings. To reveal the inside of the point cloud, click the point cloud to select it in the ‘DB Tree’ window and click the ‘Cross Section’ icon. Use mouse to pull the boundaries of the cross section and remove the ceiling. Now, you can check out the inside of the point cloud and the trajectory.
 
 .. image:: images/image22.png
     :width: 75 %
