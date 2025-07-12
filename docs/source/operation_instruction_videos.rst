@@ -2,6 +2,9 @@ Operation Instruction Videos
 ============================
 
 *Smart joystick mode* operation
+-------------------------------
+
+.. video:: videos/Smart_Joystick.mp4
 
 *Waypoint mode* operation
 
