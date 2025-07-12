@@ -29,7 +29,7 @@ Follow the `System Setup <https://github.com/jizhang-cmu/autonomy_stack_mecanum_
 
     ping 192.168.1.1xx
 
-After setting up the autonomy stack, you may follow the `System Usage <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform#system-usage>`_ section to launch the base autonomy system, the system with route planner, and the system with exploration planner. Use RVIZ and joystick controller to navigate the vehicle around. Make sure to unplug and re-plug in the joystick controller dongle once after powering on the vehicle NUC computer and powering on the joystick controller.
+After setting up the autonomy stack, you may follow the `System Usage <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform#system-usage>`_ section to launch the base autonomy system, the system with route planner, and the system with exploration planner. Use RVIZ and the joystick controller to navigate the vehicle around. Make sure to unplug and re-plug in the joystick controller dongle once after powering on the vehicle NUC computer and powering on the joystick controller.
 
 Copy the icon image to the home folder and 3 desktop buttons onto the desktop. On the desktop, right-click each of the 3 desktop buttons and 'Allow Launching' to enable them. Now, you may double-click any of the desktop buttons to launch the system in the 3 modes. Note that if the computer username is different from 'all' or the autonomy stack is not in the default home folder, open the 3 desktop buttons in a text editor and modify the links in them. Each desktop button contains 2 links, one to the system startup script and the other to the icon image.
 
