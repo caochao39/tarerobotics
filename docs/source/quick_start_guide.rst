@@ -75,16 +75,16 @@ Operating Modes
 Notes
 -----
 
-The battery when fully charged is at 29v and when empty is at 24v. When charging the battery, please make sure to stop the system so the vehicle will not drive.
+- The battery when fully charged is at 29v and when empty is at 24v. When charging the battery, please make sure to stop the system so the vehicle will not drive.
 
-Please avoid downward staircases. The system does not recognize it and can fall off the stairs.
+- Please avoid downward staircases. The system does not recognize it and can fall off the stairs.
 
-If the vehicle gets stuck and cannot move, try pressing the 'clear-terrain-map button' on the joystick controller.
+- If the vehicle gets stuck and cannot move, try pressing the 'clear-terrain-map button' on the joystick controller.
 
-When powering off the vehicle, we recommend first powering off the vehicle NUC computer from the control station. Then, turn off the switch on the vehicle.
+- When powering off the vehicle, we recommend first powering off the vehicle NUC computer from the control station. Then, turn off the switch on the vehicle.
 
-The joystick controller has multiple modes. If the mode is accidentally changed, please change it back to the default mode (top 2 and bottom 2 status LEDs on).
+- The joystick controller has multiple modes. If the mode is accidentally changed, please change it back to the default mode (top 2 and bottom 2 status LEDs on).
 
-The username and password of the vehicle NUC computer are both ‘all’
+- The username and password of the vehicle NUC computer are both ‘all’
 
 
