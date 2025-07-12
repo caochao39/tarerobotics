@@ -35,6 +35,6 @@ When shutting down or rebooting, you can use the command lines below to shut dow
     sudo shutdown now
     sudo reboot now
 
-**Notes for message sharing between different Ubuntu versions, e.g. between Ubuntu 22.04 and 24.04:** ROS topic dynamic connection is fragile. Connections should be established all at once when the system starts on the vehicle NUC computers. Please launch all nodes on the add-on AI computer (at domain ID 1) first, then launch the system on the vehicle NUC computer (at domain ID 0, default). When the system is running, keep the connections consistent on the add-on AI computer and avoid stopping and launching nodes.
+**Note that message sharing between different Ubuntu versions, e.g. between Ubuntu 22.04 and 24.04 is fragile.** Connections should be established all at once when the system starts on the vehicle NUC computers. Please launch all nodes on the add-on AI computer (at domain ID 1) first, then launch the system on the vehicle NUC computer (at domain ID 0, default). When the system is running, keep the connections consistent on the add-on AI computer and avoid stopping and launching nodes.
 
 
