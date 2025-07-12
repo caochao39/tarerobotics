@@ -22,3 +22,16 @@ The antennas of the wireless HDMI sender are removed for shipping, please open t
 .. image:: ./images/image36.jpg
     :width: 75%
 
+Setting up Control Station
+--------------------------
+
+Please prepare a monitor with HDMI cable and a set of wireless keyboard and mouse. Plug in the wireless keyboard and mouse dongle to the USB hub on the vehicle. Set up a control station by connecting the wireless HDMI receiver to the monitor with the HDMI cable and powering it on with the 5v charger and USB-C cable. Power on the vehicle by turning the switch clockwise all the way to the end and voltage is displayed on the switch. Wait for a minute and the onboard NUC i7 computer desktop should show up on the monitor.
+
+.. image:: ./images/image37.jpg
+    :width: 75%
+
+The PS3 controller dongle may not be recognized correctly after the vehicle is powered on. **Please unplug and re-plug in the PS3 controller dongle once after powering on the vehicle for it to be recognized correctly. Once recognized correctly, the top 2 and bottom 2 status LEDs on the PS3 controller should be on.**
+
+.. image:: ./images/image38.jpg
+    :width: 45%
+
