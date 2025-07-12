@@ -20,7 +20,7 @@ Contents
 
    Home <self>
    quick_start_guide
-   system_modules 
+   system_modules/index
    extensions
    simulation_system_setup
    route_planner_tuning
