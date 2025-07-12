@@ -23,7 +23,7 @@ Now, install ROS2 Jazzy following `the instructions on this page <https://docs.r
     $ echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
     $ source ~/.bashrc
 
-Follow the `System Setup <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform?tab=readme-ov-file#system-setup>`_ section in the GitHub repository readme to set up the autonomy stack. Go through the 5 steps from '1) All Dependencies' to '5) Full Repository'. Make sure to configure the Mid360 lidar driver to the specific lidar. In the `'~/autonomy_stack_mecanum_wheel_platform/src/utilities/livox_ros_driver2/config/MID360_config.json' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/utilities/livox_ros_driver2/config/MID360_config.json>`_ file, under the ``lidar_configs`` settings, set the lidar IP to 192.168.1.1xx, where xx are the last two digits of the lidar serial number. You can find it on a sticker under a QR code on the lidar. Pin the lidar to double-check its IP. 
+Follow the `System Setup <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform?tab=readme-ov-file#system-setup>`_ section in the GitHub repository readme to set up the autonomy stack. Go through the 5 steps from '1) All Dependencies' to '5) Full Repository'. Make sure to configure the Mid360 lidar driver to the specific lidar. In the `'src/utilities/livox_ros_driver2/config/MID360_config.json' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/utilities/livox_ros_driver2/config/MID360_config.json>`_ file, under the ``lidar_configs`` settings, set the lidar IP to 192.168.1.1xx, where xx are the last two digits of the lidar serial number. You can find it on a sticker under a QR code on the lidar. Pin the lidar to double-check its IP. 
 
 .. code-block:: console
 
@@ -35,7 +35,7 @@ Copy the icon image to the home folder and 3 desktop buttons onto the desktop. O
 
 .. code-block:: console
 
-   $ cd ~/autonomy_stack_mecanum_wheel_platform
+   $ cd autonomy_stack_mecanum_wheel_platform
    $ cp ./desktop_buttons/start.png ~/
    $ cp ./desktop_buttons/*.desktop ~/Desktop/
 
@@ -44,7 +44,7 @@ Finally, install a couple more packages. Copy the provided chrony configuration 
 .. code-block:: console
 
    $ sudo apt install net-tools openssh-server chrony
-   $ cd ~/autonomy_stack_mecanum_wheel_platform
+   $ cd autonomy_stack_mecanum_wheel_platform
    $ sudo cp ./chrony_conf/chrony.conf /etc/chrony
    $ sudo systemctl restart chrony.service
 
@@ -54,7 +54,7 @@ To update the system, connect the vehicle NUC computer to Internet over WiFi or 
 
     $ sudo apt update
     $ sudo apt upgrade
-    $ cd ~/autonomy_stack_mecanum_wheel_platform
+    $ cd autonomy_stack_mecanum_wheel_platform
     $ git pull
     $ colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
 

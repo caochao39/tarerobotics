@@ -1,7 +1,7 @@
 Route Planner Tuning
 ====================
 
-Route planner configurations are in the `'autonomy_stack_mecanum_wheel_platform/src/route_planner/far_planner/config' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/tree/jazzy/src/route_planner/far_planner/config>`_ folder. The default configuration file is 'indoor.yaml'. To switch the configuration file, go to the `'autonomy_stack_mecanum_wheel_platform/src/base_autonomy/vehicle_simulator/launch' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/tree/jazzy/src/base_autonomy/vehicle_simulator/launch>`_ folder and find ``route_planner_config`` in the 'system_unity_with_route_planner.launch', 'system_real_robot_with_route_planner.launch', and 'system_bagfile_with_route_planner.launch' files, change it from 'indoor' to 'outdoor'.
+Route planner configurations are in the `'src/route_planner/far_planner/config' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/tree/jazzy/src/route_planner/far_planner/config>`_ folder. The default configuration file is 'indoor.yaml'. To switch the configuration file, go to the `'src/base_autonomy/vehicle_simulator/launch' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/tree/jazzy/src/base_autonomy/vehicle_simulator/launch>`_ folder and find ``route_planner_config`` in the 'system_unity_with_route_planner.launch', 'system_real_robot_with_route_planner.launch', and 'system_bagfile_with_route_planner.launch' files, change it from 'indoor' to 'outdoor'.
 
 If the environment contains dynamic obstacles, make sure ``is_static_env = false`` and can reduce ``util/dynamic_obs_dacay_time : 2.0 (s)`` to 1.0 or 0.5. 
 
