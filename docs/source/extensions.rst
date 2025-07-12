@@ -24,7 +24,7 @@ Adding Camera
 Users can add custom cameras to the vehicle. We released `an open-source repository <https://github.com/jizhang-cmu/360_camera>`_ to use the Ricoh Theta Z1 camera. Manual extrinsic and latency calibration code is provided. Potential applications include running a semantic model for people and scene understanding and a vision-language model for human-robot interactions.
 
 .. image:: ./images/image32.png
-    :width: 55%
+    :width: 25%
 
 Adding Manipulation Arm
 -----------------------
@@ -32,12 +32,12 @@ Adding Manipulation Arm
 Users can add a manipulation arm to the vehicle. We recommend using arms no more than 5kg. When the vehicle approaches an object and tries to grasp the object, users may need to locally re-position the vehicle. For that, please refer to `this open-source ROS package <https://github.com/jizhang-cmu/gadgets/tree/jazzy/local_movement>`_ to move the vehicle around in short and direct movements.
 
 .. image:: ./images/image33.png
-    :width: 55%
+    :width: 30%
 
 The mounting hole pattern on the top board is provided for users to design an adapter plate to mount the manipulation arm.
 
-.. image:: ./images/image35.png
-    :width: 55%
+.. image:: ./images/image35.jpg
+    :width: 80%
 
 Multi-robot Coordination
 ------------------------
