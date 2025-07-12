@@ -22,4 +22,4 @@ Launch the base autonomy system. In RVIZ, click 'Pannels->Displays' and toggle '
    * - .. image:: ../images/image1.jpg
          :width: 100%
      - .. image:: ../images/image13.jpg
-         :width: 100%
+         :width: 95%
