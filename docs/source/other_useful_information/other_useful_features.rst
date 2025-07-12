@@ -18,35 +18,35 @@ Other Useful Features
 
 **Recording and processing bagfiles:** To record the sensor data to a bagfile, source the ROS workspace in a terminal (due to custom format for the scan messages) and use the command lines below while the system is running.
 
-.. code-block:: XML
+.. code-block:: console
 
   source autonomy_stack_mecanum_wheel_platform/install/setup.bash
   ros2 bag record /imu/data /lidar/scan -o 'bagfolder_path'
 
 To launch the system for bagfile processing, use of the command lines below. For base autonomy system:
 
-.. code-block:: XML
+.. code-block:: console
 
   cd autonomy_stack_mecanum_wheel_platform
   ./system_bagfile.sh
 
 For system with route planner:
 
-.. code-block:: XML
+.. code-block:: console
 
     cd autonomy_stack_mecanum_wheel_platform
     ./system_bagfile_with_route_planner.sh
 
 For system with exploration planner:
 
-.. code-block:: XML
+.. code-block:: console
 
     cd autonomy_stack_mecanum_wheel_platform
     ./system_bagfile_with_exploration_planner.sh
 
 In another terminal, source the ROS workspace (required) and play the bagfile.
 
-.. code-block:: XML
+.. code-block:: console
 
     source autonomy_stack_mecanum_wheel_platform/install/setup.bash
     ros2 bag play 'bagfolder_path/bagfile_name.mcap (or bagfile_name.db3)'

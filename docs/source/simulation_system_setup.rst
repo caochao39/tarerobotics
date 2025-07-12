@@ -8,27 +8,27 @@ Base Autonomy System
 
 Install ROS2 Jazzy. Then, add 'source /opt/ros/jazzy/setup.bash' to the '~/.bashrc' file and ``source ~/.bashrc`` in the terminal to engage the installation.
 
-.. code-block:: XML
+.. code-block:: console
 
     echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
     source ~/.bashrc
 
 Install dependencies with the command lines below.
 
-.. code-block:: XML
+.. code-block:: console
 
     sudo apt update
     sudo apt install ros-jazzy-desktop-full ros-jazzy-pcl-ros libpcl-dev git
 
 Clone the open-source repository.
 
-.. code-block:: XML
+.. code-block:: console
 
     git clone https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform.git
 
 In a terminal, go to the folder, checkout the 'jazzy' branch, and compile. Note that this skips the SLAM module and Mid-360 lidar driver. The two packages are not needed for simulation.
 
-.. code-block:: XML
+.. code-block:: console
 
     cd autonomy_stack_mecanum_wheel_platform
     git checkout jazzy
@@ -41,7 +41,7 @@ Download `a Unity environment model <https://drive.google.com/drive/folders/1G1J
 
 In a terminal, go to the repository folder and launch the system.
 
-.. code-block:: XML
+.. code-block:: console
 
    ./system_simulation.sh
 
@@ -66,7 +66,7 @@ After seeing data showing up in RVIZ, users can use the 'Waypoint' button to set
 
 Alternatively, users can run a ROS node to send a series of waypoints. In another terminal, go to the folder and source the ROS workspace, then run the ROS node with the command lines below. The ROS node sends navigation boundary and speed as well. Click the 'Resume Navigation to Goal' button in RVIZ, and the vehicle will navigate inside the boundary following the waypoints.
 
-.. code-block:: XML
+.. code-block:: console
 
     source install/setup.sh
     ros2 launch waypoint_example waypoint_example.launch
@@ -76,7 +76,7 @@ System with Route Planner
 
 The route planner conducts planning in the global environment and guides the vehicle to navigate to a goal point. To launch the system with route planner, use the command line below.
 
-.. code-block:: XML
+.. code-block:: console
 
     ./system_simulation_with_route_planner.sh
 
@@ -92,7 +92,7 @@ System with Exploration Planner
 
 The exploration planner conducts planning in the global environment and guides the vehicle to cover the environment. To launch the system with exploration planner, use the command line below.
 
-.. code-block:: XML
+.. code-block:: console
 
     ./system_simulation_with_exploration_planner.sh
 

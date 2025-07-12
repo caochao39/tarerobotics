@@ -3,7 +3,7 @@ ROS Message Sharing across Computers
 
 Copy the 2 system start scripts 'system_with_domain_bridge.sh' and 'system_with_route_planner_and_domain_bridge.sh' `in this repository <https://github.com/jizhang-cmu/gadgets/tree/jazzy/ros_message_sharing_across_computers>`_ to the home folder on the vehicle NUC computer. In a terminal, go to the home folder and use the command lines below to make the scripts executable. These 2 scripts start the base autonomy system and the system with route planner, without RVIZ and with the domain bridge. The domain bridge shares messages between domain 0 (vehicle NUC computer, default) and domain 1 (add-on AI computer). If more topics are to be shared, update the `'~/autonomy_stack_mecanum_wheel_platform/src/utilities/domain_bridge/config/domain_bridge.yaml' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/utilities/domain_bridge/config/domain_bridge.yaml>`_ file on the vehicle NUC computer or replace it with the one `in this repository <https://github.com/jizhang-cmu/gadgets/tree/jazzy/ros_message_sharing_across_computers>`_.
 
-.. code-block:: XML
+.. code-block:: console
 
     chmod 777 system_with_domain_bridge.sh
     chmod 777 system_with_route_planner_and_domain_bridge.sh
@@ -12,7 +12,7 @@ Copy the 'data_view' folder `in this repository <https://github.com/jizhang-cmu/
 
 At this point, you may ssh from one computer to the other computer to start the system. Use ``ssh all@10.1.1.100`` with password 'all' if ssh'ing from the add-on AI computer to the vehicle NUC computer. Turn off Wi-Fi on both computers. First, start system on the vehicle NUC computer using 1 out of the 2 system start scripts (command lines below), with base autonomy system or system with route planner. Then, double-click a desktop button on the add-on AI computer to start RVIZ. Please use the corresponding desktop button as the system start script on the vehicle NUC computer. Now, you should see data displayed in RVIZ and you can navigate the vehicle around. You can also turn on Wi-Fi on the add-on AI computer if needed.
 
-.. code-block:: XML
+.. code-block:: console
 
     ~/system_with_domain_bridge.sh
     ~/system_with_route_planner_and_domain_bridge.sh
@@ -23,14 +23,14 @@ The add-on AI computer has domain ID 1 across the computer. If running other cus
 
 You may unplug the HDMI cable and USB power cable from the vehicle NUC computer and plug them into the add-on AI computer to use it from the control station. If warnings or errors show up in the vehicle NUC computer terminal continuously, reboot both computers. Likely, something isn't killed and still subscribes to the topics on either computer. Also, if sharing a large amount of data through ROS messages, e.g. sharing high-resolution images, use the command lines below to increase message buffer size on both computers. Then, use ``sysctl net.core.rmem_max`` and ``sysctl net.core.wmem_max`` to check the buffer size. Sharing a large amount of data between computers is not recommended. If images have to be shared, please compress the images with 'image_transport' first. Note that the Ricoh Theta Z1 camera driver can publish compressed images alongside the raw images.
 
-.. code-block:: XML
+.. code-block:: console
 
     sudo sysctl -w net.core.rmem_max=67108864 net.core.rmem_default=67108864
     sudo sysctl -w net.core.wmem_max=67108864 net.core.wmem_default=67108864
 
 When shutting down or rebooting, you can use the command lines below to shut down or reboot one computer ssh'ed from the other computer.
 
-.. code-block:: XML
+.. code-block:: console
 
     sudo shutdown now
     sudo reboot now
