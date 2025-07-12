@@ -20,6 +20,6 @@ Launch the base autonomy system. In RVIZ, click 'Pannels->Displays' and toggle '
    :class: no-border
 
    * - .. image:: ../images/image1.jpg
-         :width: 90%
+         :width: 32.5%
      - .. image:: ../images/image13.jpg
-         :width: 90%
+         :width: 45%

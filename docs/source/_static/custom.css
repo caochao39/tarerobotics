@@ -1,0 +1,7 @@
+table.no-border,
+table.no-border td,
+table.no-border th {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+}
