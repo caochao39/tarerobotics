@@ -20,5 +20,5 @@ Installing Antennas and Dongle
 The antennas of the wireless HDMI sender are removed for shipping, please open the rear panel of the vehicle and install the antennas. Then, use zip ties to secure the antennas at a fixed angle. Also, plug in the joystick controller dongle to the USB hub on the vehicle. The joystick controller dongle, antennas, and zip ties are included in the box.
 
 .. image:: ./images/image36.jpg
-    :width: 55%
+    :width: 75%
 
