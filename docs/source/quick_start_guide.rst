@@ -64,12 +64,12 @@ Operating Modes
 
 *Manual mode*: The vehicle tries to follow joystick commands without any collision avoidance. Pressing the 'manual-mode' button on the controller switches the system to manual mode. Then, use the right joystick to set the forward and lateral speed and the left joystick to set the yaw rate, in the Mode 2 convention.
 
-|pic1| |pic2|
+|pic3| |pic4|
 
-.. |pic1| image:: ./images/image15.jpg
+.. |pic3| image:: ./images/image15.jpg
     :width: 55% 
 
-.. |pic2| image:: ./images/image21.jpg
+.. |pic4| image:: ./images/image21.jpg
     :width: 30%
 
 Notes
