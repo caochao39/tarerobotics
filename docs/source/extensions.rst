@@ -1,7 +1,7 @@
 Extentions
 ==========
 
-The vehicle hardware is designed to support advanced AI in mind. Space and power options are provided for users to install a Jetson AGX Orin computer or a gaming laptop. Mounting holes are available on the top board for users to install additional sensors and equipment. If adding components on the top board in the lidar FOV, please change 'blindFront', 'blindBack', 'blindLeft', and 'blindRight' in the `'autonomy_stack_mecanum_wheel_platform/src/slam/arise_slam_mid360/config/livox_mid360.yaml' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/slam/arise_slam_mid360/config/livox_mid360.yaml>`_ file accordingly to exclude the components from the lidar sensing.
+The vehicle hardware is designed to support advanced AI in mind. Space and power options are provided for users to install a Jetson AGX Orin computer or a gaming laptop. Mounting holes are available on the top board for users to install additional sensors and equipment.
 
 .. image:: ./images/image30.jpg
     :width: 55%
@@ -16,11 +16,12 @@ If adding a Jetson AGX Orin computer, open the front and back panels on the vehi
 .. image:: ./images/image31.jpg
     :width: 55%
 
-Alternatively, users can set up the autonomy stack and configure Ethernet IP on the add-on AI computer. Follow instructions in the `Ubuntu System Setup <https://tarerobotics.readthedocs.io/en/latest/other_useful_information/ubuntu_system_setup.html>`_ section. Then, unplug all the HDMI/Ethernet/USB cables as well as the joystick controller dongle from the vehicle NUC computer and plug them into the add-on AI computer. Now, users can launch the entire system on the add-on AI computer. The mounting hole pattern on the vehicle top board is provided below.
+Alternatively, users can set up the autonomy stack and configure Ethernet IP on the add-on AI computer. Follow instructions in the `Ubuntu System Setup <https://tarerobotics.readthedocs.io/en/latest/other_useful_information/ubuntu_system_setup.html>`_ section. Then, unplug all the HDMI/Ethernet/USB cables as well as the joystick controller dongle from the vehicle NUC computer and plug them into the add-on AI computer. Now, users can launch the entire system on the add-on AI computer. 
+
+The hole pattern on the vehicle top board is provided below. If installing components on the top board in the lidar FOV, please change ``blindFront``, ``blindBack``, ``blindLeft``, and ``blindRight`` in the `'autonomy_stack_mecanum_wheel_platform/src/slam/arise_slam_mid360/config/livox_mid360.yaml' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/slam/arise_slam_mid360/config/livox_mid360.yaml>`_ file accordingly to exclude the components from the lidar sensing.
 
 .. image:: ./images/image35.jpg
     :width: 90%
-
 
 Adding Camera
 -------------
