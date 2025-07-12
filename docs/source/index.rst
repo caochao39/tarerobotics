@@ -20,12 +20,7 @@ Contents
 
    Home <self>
    quick_start_guide
-   slam
-   collision_avoidance
-   terrain_traversability_analysis
-   path_following
-   route_planning
-   exploration_planning
+   system_modules 
    extensions
    simulation_system_setup
    route_planner_tuning
