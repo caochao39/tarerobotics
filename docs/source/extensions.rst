@@ -21,7 +21,7 @@ Alternatively, users can set up the autonomy stack on the add-on AI computer. Fo
 Adding Camera
 -------------
 
-Users can add custom cameras to the vehicle. We released `an open-source repository <https://github.com/jizhang-cmu/360_camera>`_ to use the Ricoh Theta Z1 camera. Manual extrinsic and latency calibration code is provided. Potential applications include running a semantic model for people and scene understanding and a vision-language model for human-robot interactions.
+Users can add custom cameras to the vehicle. To assist this, we released `an open-source repository <https://github.com/jizhang-cmu/360_camera>`_ to use the Ricoh Theta Z1 camera as an example. In addition to the camera driver, manual extrinsic and latency calibration code is provided in the repository. When mounting the camera, we recommend placing the camera on a boom behind the lidar to reduce lidar FOV blockage. Potential applications of adding cameras to the vehicle include running a semantic segmentation model for people and scene understanding and a vision-language model for human-robot interactions as well as autonomous navigation guidance.
 
 .. image:: ./images/image32.png
     :width: 25%
@@ -29,12 +29,12 @@ Users can add custom cameras to the vehicle. We released `an open-source reposit
 Adding Manipulation Arm
 -----------------------
 
-Users can add a manipulation arm to the vehicle. We recommend using arms no more than 5kg. When the vehicle approaches an object and tries to grasp the object, users may need to locally re-position the vehicle. For that, please refer to `this open-source ROS package <https://github.com/jizhang-cmu/gadgets/tree/jazzy/local_movement>`_ to move the vehicle around in short and direct movements.
+Users can add a manipulation arm to the vehicle. We recommend selecting arms no more than 5kg. With an arm installed, when the vehicle approaches an object and tries to grasp the object, users may need to locally re-position the vehicle for the ease of grasping the object. For this purpose, please refer to `this open-source ROS package <https://github.com/jizhang-cmu/gadgets/tree/jazzy/local_movement>`_ to move the vehicle around in short and direct movements.
 
 .. image:: ./images/image33.png
-    :width: 30%
+    :width: 32%
 
-The mounting hole pattern on the top board is provided for users to design an adapter plate to mount the manipulation arm.
+The mounting hole pattern on the vehicle top board is provided. This can help users design an adapter plate to mount the manipulation arm.
 
 .. image:: ./images/image35.jpg
     :width: 80%
@@ -42,8 +42,7 @@ The mounting hole pattern on the top board is provided for users to design an ad
 Multi-robot Coordination
 ------------------------
 
-A multi-robot coordination system may need to involve `a wireless ad hoc network <https://en.wikipedia.org/wiki/Wireless_ad_hoc_network>`_ for inter-vehicle communication, where each vehicle is installed with a radio node that connects to the network. Compared to a traditional centralized network, a wireless ad hoc network does not require a central router or wireless access point, which allows vehicles to establish a direct point-to-point connection when they are within the wireless communication range. The vehicles can utilize the ad hoc network for data sharing and coordination.
-
+A multi-robot coordination system may need to involve `a wireless ad hoc network <https://en.wikipedia.org/wiki/Wireless_ad_hoc_network>`_ for inter-vehicle communication, where each vehicle needs to be installed with a radio node that connects to the network. Compared to a traditional centralized network, a wireless ad hoc network does not require a central router or wireless access point, which allows vehicles to establish a direct point-to-point connection when they are within the wireless communication range. The vehicles can utilize the ad hoc network for data sharing and coordination.
 
 .. image:: ./images/image34.png
     :width: 55%
