@@ -56,14 +56,6 @@ After seeing data showing up in RVIZ, users can use the 'Waypoint' button to set
 
 - *Manual mode*: The vehicle tries to follow joystick commands without any collision avoidance. Pressing the 'manual-mode' button on the joystick controller switches the system to *manual mode*. Then, use the right joystick to set the forward and lateral speed and the left joystick to set the yaw rate, in the Mode 2 convention.
 
-|pic1| |pic2|
-
-.. |pic1| image:: ./images/image15.jpg
-    :width: 55% 
-
-.. |pic2| image:: ./images/image21.jpg
-    :width: 30%
-
 .. list-table::
    :widths: 65 35 
    :align: center
