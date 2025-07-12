@@ -1,11 +1,11 @@
 Operation Instruction Videos
 ============================
 
-*Smart joystick mode*
+*Smart joystick mode* operation
 
-*Waypoint mode*
+*Waypoint mode* operation
 
-*Manual mode*
+*Manual mode* operation
 
 Stopping and resuming navigation 
 
