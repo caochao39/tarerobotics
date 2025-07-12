@@ -20,7 +20,7 @@ Installing Antennas and Dongle
 The antennas of the wireless HDMI sender are removed for shipping, please open the rear panel of the vehicle and install the antennas. Then, use zip ties to secure the antennas at a fixed angle. Also, plug in the joystick controller dongle to the USB hub on the vehicle. The joystick controller dongle, antennas, and zip ties are included in the box.
 
 .. image:: ./images/image36.jpg
-    :width: 75%
+    :width: 70%
 
 Setting up Control Station
 --------------------------
@@ -43,16 +43,16 @@ From the control station, use the 3 desktop buttons to launch the system. Double
 Launch base autonomy system:
 
 .. image:: ./images/image39.jpg
-    :width: 80%
+    :width: 75%
 
 Launch system with route planner:
 
 .. image:: ./images/image40.jpg
-    :width: 80%
+    :width: 75%
 
 Launch system with exploration planner:
 
 .. image:: ./images/image41.jpg
-    :width: 80%
+    :width: 75%
 
 
