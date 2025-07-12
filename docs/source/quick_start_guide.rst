@@ -66,10 +66,10 @@ Operating Modes
 
 |pic1| |pic2|
 
-.. |pic1| image:: ../images/image15.jpg
+.. |pic1| image:: ./images/image15.jpg
     :width: 55% 
 
-.. |pic2| image:: ../images/image21.jpg
+.. |pic2| image:: ./images/image21.jpg
     :width: 30%
 
 Notes
