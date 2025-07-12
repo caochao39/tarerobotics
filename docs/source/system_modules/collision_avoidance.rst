@@ -8,15 +8,7 @@ Launch the base autonomy system and use the 'Waypoint' button in RVIZ to set a w
 .. image:: ../images/image6.png
     :width: 70%
 
-Alternatively, the collision avoidance planner can take joystick input. This is equivalent to setting a waypoint very far and only the direction to the waypoint is effective. Users can use the physical joystick controller (left in the figure) or the virtual joystick in RVIZ (right in the figure) to navigate the vehicle. The vehicle will avoid collisions. If using the physical joystick controller, operate the right joystick on it. To resume navigation to the waypoint, click the 'Resume Navigation to Goal' button in RVIZ. Or, users can hold the 'waypoint-mode' button on the controller and use the right joystick to set the speed.
-
-|pic1| |pic2|
-
-.. |pic1| image:: ../images/image15.jpg
-    :width: 55% 
-
-.. |pic2| image:: ../images/image21.jpg
-    :width: 30%
+Alternatively, the collision avoidance planner can take joystick input. This is equivalent to setting a waypoint very far and only the direction to the waypoint is effective. Users can use the joystick controller or the control panel in RVIZ to navigate the vehicle. The vehicle will avoid collisions. If using the joystick controller, operate the right joystick on it. To resume navigation to the waypoint, click the 'Resume Navigation to Goal' button in RVIZ. Or, users can hold the 'waypoint-mode' button on the joystick controller and use the right joystick to set the speed.
 
 The speed is set in the `'autonomy_stack_mecanum_wheel_platform/src/base_autonomy/local_planner/launch/local_planner.launch' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/base_autonomy/local_planner/launch/local_planner.launch>`_ file. The ``maxSpeed`` defines the maximum speed in all modes and ``autonomySpeed`` defines the speed in *waypoint mode*. When navigating in tight areas, reduce both speeds to 0.75 or 0.5 (m/s).
 
