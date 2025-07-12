@@ -9,10 +9,10 @@ After the installation, connect the vehicle NUC computer to WiFi and update the 
 
 .. code-block:: console
 
-    sudo apt update
-    sudo apt upgrade
-    sudo adduser all dialout
-    sudo reboot now
+    $ sudo apt update
+    $ sudo apt upgrade
+    $ sudo adduser all dialout
+    $ sudo reboot now
 
 Go to 'Settings->Network' and configure the wired network connected to the Mid360 lidar to 'Manual' settings, IP at '192.168.1.5', netmask at '255.255.255.0', and gateway at '192.168.1.1'. Go to 'Settings->Power' and choose 'Performance', set 'Screen Blank' to 'Never', 'Automatic Suspend' to 'Off', and 'Power Button Behavior' to 'Power Off'.
 
@@ -20,14 +20,14 @@ Now, install ROS2 Jazzy following `the instructions on this page <https://docs.r
 
 .. code-block:: console
 
-    echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
-    source ~/.bashrc
+    $ echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
+    $ source ~/.bashrc
 
 Follow the `System Setup <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform?tab=readme-ov-file#system-setup>`_ section in the GitHub repository readme to set up the autonomy stack. Go through the 5 steps from '1) All Dependencies' to '5) Full Repository'. Make sure to configure the Mid360 lidar driver to the specific lidar. In the `'~/autonomy_stack_mecanum_wheel_platform/src/utilities/livox_ros_driver2/config/MID360_config.json' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/utilities/livox_ros_driver2/config/MID360_config.json>`_ file, under the ``lidar_configs`` settings, set the lidar IP to 192.168.1.1xx, where xx are the last two digits of the lidar serial number. You can find it on a sticker under a QR code on the lidar. Pin the lidar to double-check its IP. 
 
 .. code-block:: console
 
-    ping 192.168.1.1xx
+    $ ping 192.168.1.1xx
 
 After setting up the autonomy stack, you may follow the `System Usage <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform#system-usage>`_ section to launch the base autonomy system, the system with route planner, and the system with exploration planner. Use RVIZ and the joystick controller to navigate the vehicle around. Make sure to unplug and re-plug in the joystick controller dongle once after powering on the vehicle NUC computer and powering on the joystick controller.
 
@@ -35,26 +35,26 @@ Copy the icon image to the home folder and 3 desktop buttons onto the desktop. O
 
 .. code-block:: console
 
-   cd ~/autonomy_stack_mecanum_wheel_platform
-   cp ./desktop_buttons/start.png ~/
-   cp ./desktop_buttons/*.desktop ~/Desktop/
+   $ cd ~/autonomy_stack_mecanum_wheel_platform
+   $ cp ./desktop_buttons/start.png ~/
+   $ cp ./desktop_buttons/*.desktop ~/Desktop/
 
 Finally, install a couple more packages. Copy the provided chrony configuration file into the system and restart chrony. This creates a time server on the vehicle NUC computer at IP 10.1.1.100. When connecting to the add-on AI computer, configure the wired network on the vehicle NUC computer connecting to the add-on AI computer to 'Manual' settings, IP at '10.1.1.100', netmask at '255.255.255.0', and gateway at '10.1.1.1'. Now, the vehicle NUC computer can be connected to the add-on AI computer.
 
 .. code-block:: console
 
-   sudo apt install net-tools openssh-server chrony
-   cd ~/autonomy_stack_mecanum_wheel_platform
-   sudo cp ./chrony_conf/chrony.conf /etc/chrony
-   sudo systemctl restart chrony.service
+   $ sudo apt install net-tools openssh-server chrony
+   $ cd ~/autonomy_stack_mecanum_wheel_platform
+   $ sudo cp ./chrony_conf/chrony.conf /etc/chrony
+   $ sudo systemctl restart chrony.service
 
 To update the system, connect the vehicle NUC computer to Internet over WiFi or Ethernet (via USB to Ethernet adapter) and run command lines below. Then, reboot the computer.
 
 .. code-block:: console
 
-    sudo apt update
-    sudo apt upgrade
-    cd ~/autonomy_stack_mecanum_wheel_platform
-    git pull
-    colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
+    $ sudo apt update
+    $ sudo apt upgrade
+    $ cd ~/autonomy_stack_mecanum_wheel_platform
+    $ git pull
+    $ colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
 

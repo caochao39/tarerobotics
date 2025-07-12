@@ -20,35 +20,35 @@ Other Useful Features
 
 .. code-block:: console
 
-  source autonomy_stack_mecanum_wheel_platform/install/setup.bash
-  ros2 bag record /imu/data /lidar/scan -o 'bagfolder_path'
+  $ source autonomy_stack_mecanum_wheel_platform/install/setup.bash
+  $ ros2 bag record /imu/data /lidar/scan -o 'bagfolder_path'
 
 To launch the system for bagfile processing, use of the command lines below. For base autonomy system:
 
 .. code-block:: console
 
-  cd autonomy_stack_mecanum_wheel_platform
-  ./system_bagfile.sh
+  $ cd autonomy_stack_mecanum_wheel_platform
+  $ ./system_bagfile.sh
 
 For system with route planner:
 
 .. code-block:: console
 
-    cd autonomy_stack_mecanum_wheel_platform
-    ./system_bagfile_with_route_planner.sh
+  $ cd autonomy_stack_mecanum_wheel_platform
+  $ ./system_bagfile_with_route_planner.sh
 
 For system with exploration planner:
 
 .. code-block:: console
 
-    cd autonomy_stack_mecanum_wheel_platform
-    ./system_bagfile_with_exploration_planner.sh
+  $ cd autonomy_stack_mecanum_wheel_platform
+  $ ./system_bagfile_with_exploration_planner.sh
 
 In another terminal, source the ROS workspace (required) and play the bagfile.
 
 .. code-block:: console
 
-    source autonomy_stack_mecanum_wheel_platform/install/setup.bash
-    ros2 bag play 'bagfolder_path/bagfile_name.mcap (or bagfile_name.db3)'
+  $ source autonomy_stack_mecanum_wheel_platform/install/setup.bash
+  $ ros2 bag play 'bagfolder_path/bagfile_name.mcap (or bagfile_name.db3)'
 
 `A few example bagfiles are provided here. <https://drive.google.com/drive/folders/1G1JYkccvoSlxyySuTlPfvmrWoJUO8oSs?usp=sharing>`_ Users can use the bagfiles to test the system offline without accessing the real-robot setup. Note that for bagfile processing, please follow the `Ubuntu System Setup <https://tarerobotics.readthedocs.io/en/latest/other_useful_information/ubuntu_system_setup.html>`_ section to set up the system and autonomy stack.
