@@ -32,12 +32,12 @@ Adding Manipulation Arm
 Users can add a manipulation arm to the vehicle. We recommend selecting arms no more than 5kg. With an arm installed, when the vehicle approaches an object and tries to grasp the object, users may need to locally re-position the vehicle for the ease of grasping the object. For this purpose, please refer to `this open-source ROS package <https://github.com/jizhang-cmu/gadgets/tree/jazzy/local_movement>`_ to move the vehicle around in short and direct movements.
 
 .. image:: ./images/image33.png
-    :width: 32%
+    :width: 33%
 
 The mounting hole pattern on the vehicle top board is provided. This can help users design an adapter plate to mount the manipulation arm.
 
 .. image:: ./images/image35.jpg
-    :width: 80%
+    :width: 90%
 
 Multi-robot Coordination
 ------------------------
