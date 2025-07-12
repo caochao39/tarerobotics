@@ -7,12 +7,12 @@ Power off the vehicle NUC computer, plug in the USB drive, then power on the com
 
 After the installation, connect the vehicle NUC computer to WiFi and update the Ubuntu system, then add username to dialout group and reboot. Note that if the computer username is different from 'all', change the username accordingly in the command lines below.
 
-```
-sudo apt update
-sudo apt upgrade
-sudo adduser all dialout
-sudo reboot now
-```
+.. code-block:: XML
+
+    sudo apt update
+    sudo apt upgrade
+    sudo adduser all dialout
+    sudo reboot now
 
 Go to 'Settings->Network' and configure the wired network connected to the Mid360 lidar to 'Manual' settings, IP at '192.168.1.5', netmask at '255.255.255.0', and gateway at '192.168.1.1'. Go to 'Settings->Power' and choose 'Performance', set 'Screen Blank' to 'Never', 'Automatic Suspend' to 'Off', and 'Power Button Behavior' to 'Power Off'.
 
