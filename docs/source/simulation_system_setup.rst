@@ -10,8 +10,8 @@ Install ROS2 Jazzy. Then, add 'source /opt/ros/jazzy/setup.bash' to the '~/.bash
 
 .. code-block:: console
 
-    echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
-    source ~/.bashrc
+    $ echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
+    $ source ~/.bashrc
 
 Install dependencies with the command lines below.
 
