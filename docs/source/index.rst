@@ -20,6 +20,7 @@ Contents
 
    Home <self>
    quick_start_guide
+   operation_instruction_videos
    simulation_system_setup
    system_modules/index
    extensions
