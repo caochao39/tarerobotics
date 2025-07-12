@@ -3,7 +3,7 @@ Other Useful Features
 
 **Adding additional collision detection sensors:** The built-in Mid360 lidar leaves a blind area at the lower front of the vehicle. If users add additional collision detection sensors, such as a line sensor to compensate for the blind area (green dot in the figure), send the data as ROS PointCloud2 typed messages on the '/added_obstacles' topic. The data needs to be converted into world frame first using the state estimation output (ROS Odometry typed messages on the '/state_estimation' topic). The system will take the points and use them together with the Mid360 lidar points for collision avoidance. Note that this is mostly for handling the extreme cases where low obstacles move quickly into the blind area in front of the vehicle.
 
-.. image:: ../images/image6.png
+.. image:: ../images/image29.png
     :width: 40%
 
 **Turning on/off collision checking:** Users can send a ROS Bool typed message on the '/check_obstacle' topic to turn on/off collision checking during navigation.
