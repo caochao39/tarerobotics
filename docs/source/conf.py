@@ -45,6 +45,14 @@ intersphinx_disabled_domains = ["std"]
 
 templates_path = ["_templates"]
 
+# sphinx-copybutton config
+
+# Configure sphinx-copybutton to not copy the following lines in console code-blocks:
+#   1. Prompt lines ($): '.linenos, .gp'
+#   2. Command output lines: '.go'
+# See: https://sphinx-copybutton.readthedocs.io/en/latest/use.html#automatic-exclusion-of-prompts-from-the-copies
+copybutton_exclude = '.linenos, .gp, .go'
+
 # -- Options for EPUB output
 epub_show_urls = "footnote"
 
