@@ -9,7 +9,7 @@ The box contains the Mecanum wheel vehicle, battery charger, PS3 controller, wir
 |pic1| |pic2|
 
 .. |pic1| image:: ./images/image42.jpg
-   :width: 34% 
+   :width: 33% 
 
 .. |pic2| image:: ./images/image43.jpg
    :width: 55%
