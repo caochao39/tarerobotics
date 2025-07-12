@@ -57,4 +57,4 @@ To update the system, connect the vehicle NUC computer to Internet over WiFi or 
     cd ~/autonomy_stack_mecanum_wheel_platform
     git pull
     colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
-```
+
