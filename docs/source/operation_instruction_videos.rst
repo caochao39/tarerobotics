@@ -9,6 +9,6 @@ Operation Instruction Videos
 
 Stopping and resuming navigation 
 
-Route planning navigation
+Starting route planning navigation
 
-Exploration
+Starting exploration

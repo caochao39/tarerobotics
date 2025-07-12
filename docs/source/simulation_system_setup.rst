@@ -1,10 +1,12 @@
 Simulation System Setup
 =======================
 
+This section contains instructions to set up our autonomy stack for simulation using Ubuntu 24.04 with `ROS2 Jazzy <https://docs.ros.org/en/jazzy/Installation.html>`_ (recommended distribution). For other Ubuntu and ROS2 distributions, please refer to the corresponding branches in the `GitHub repository <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform>`_. The system is integrated with `Unity <https://unity.com>`_ environment models.
+
 Base Autonomy System
 --------------------
 
-This section contains instructions to set up our autonomy stack for simulation using Ubuntu 24.04 with `ROS2 Jazzy <https://docs.ros.org/en/jazzy/Installation.html>`_ (recommended distribution). For other Ubuntu and ROS2 distributions, please refer to the corresponding branches in the `GitHub repository <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform>`_. The system is integrated with `Unity <https://unity.com>`_ environment models. After installing ROS2 Jazzy, add 'source /opt/ros/jazzy/setup.bash' to the '~/.bashrc' file and ``source ~/.bashrc`` in the terminal to engage the installation.
+Install ROS2 Jazzy. Then, add 'source /opt/ros/jazzy/setup.bash' to the '~/.bashrc' file and ``source ~/.bashrc`` in the terminal to engage the installation.
 
 .. code-block:: XML
 
