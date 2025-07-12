@@ -26,6 +26,7 @@ author = "Ji Zhang, Chao Cao"
 # -- General configuration
 
 extensions = [
+    "sphinx-copybutton",
     "sphinx.ext.duration",
     "sphinx.ext.doctest",
     "sphinx.ext.autodoc",
