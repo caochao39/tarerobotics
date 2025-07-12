@@ -69,9 +69,9 @@ After seeing data showing up in RVIZ, users can use the 'Waypoint' button to set
    :align: center
    :class: no-border
 
-   * - .. image:: ../images/image15.jpg
+   * - .. image:: ./images/image15.jpg
          :width: 100%
-     - .. image:: ../images/image21.jpg
+     - .. image:: ./images/image21.jpg
          :width: 100%
 
 
