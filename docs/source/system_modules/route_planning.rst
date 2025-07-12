@@ -9,5 +9,5 @@ When navigating with the route planner, the base autonomy system operates in way
 
 To tune the route planner configuration, refer to the `Route Planner Tuning <https://tarerobotics.readthedocs.io/en/latest/other_useful_information/route_planner_tuning.html>`_ section.
 
-.. image:: ../images/image23.png
+.. image:: ../images/image23.jpg
     :width: 70%
