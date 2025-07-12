@@ -47,3 +47,14 @@ Finally, install a couple more packages. Copy the provided chrony configuration 
    cd ~/autonomy_stack_mecanum_wheel_platform
    sudo cp ./chrony_conf/chrony.conf /etc/chrony
    sudo systemctl restart chrony.service
+
+To update the system, connect the vehicle NUC computer to Internet over WiFi or Ethernet (via USB to Ethernet adapter) and run command lines below. Then, reboot the computer.
+
+.. code-block:: XML
+
+    sudo apt update
+    sudo apt upgrade
+    cd ~/autonomy_stack_mecanum_wheel_platform
+    git pull
+    colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
+```
