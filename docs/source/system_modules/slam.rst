@@ -6,7 +6,7 @@ The SLAM module conducts scan matching to incrementally build a map of the trave
 Mapping Mode
 ------------
 
-Launch the system in base mode and users should see vehicle pose and registered scans in RVIZ. The vehicle pose is published as ROS Odometry typed messages on the ‘/state_estimation’ topic (coordinate frame in the figure) and the registered scans are published as ROS PointCloud2 typed messages on the ‘/registered_scan’ topic (white points in the figure). When the vehicle navigates, users should see the vehicle pose moving in RVIZ and the registered scans covering newly traversed areas. The registered scans are further converted to the vehicle frame and published on the ‘/sensor_scan’ topic. The corresponding vehicle pose is published on the ‘/state_estimation_at_scan’ topic, where each pose message corresponds to a scan message with the same timestamp.
+Launch the base autonomy system and users should see vehicle pose and registered scans in RVIZ. The vehicle pose is published as ROS Odometry typed messages on the ‘/state_estimation’ topic (coordinate frame in the figure) and the registered scans are published as ROS PointCloud2 typed messages on the ‘/registered_scan’ topic (white points in the figure). When the vehicle navigates, users should see the vehicle pose moving in RVIZ and the registered scans covering newly traversed areas. The registered scans are further converted to the vehicle frame and published on the ‘/sensor_scan’ topic. The corresponding vehicle pose is published on the ‘/state_estimation_at_scan’ topic, where each pose message corresponds to a scan message with the same timestamp.
 
 .. image:: ../images/image9.png
     :width: 75%
