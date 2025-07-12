@@ -7,8 +7,8 @@ Launch the base autonomy system. In RVIZ, click 'Pannels->Displays' and toggle '
 
 |pic1| |pic2|
 
-.. |pic1| image:: ../images/image1.png
+.. |pic1| image:: ../images/image1.jpg
    :width: 32.5% 
 
-.. |pic2| image:: ../images/image13.png
+.. |pic2| image:: ../images/image13.jpg
    :width: 45%

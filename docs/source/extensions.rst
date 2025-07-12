@@ -23,7 +23,7 @@ Adding Camera
 
 Users can add custom cameras to the vehicle. To assist this, we released `an open-source repository <https://github.com/jizhang-cmu/360_camera>`_ to use the Ricoh Theta Z1 camera as an example. In addition to the camera driver, manual extrinsic and latency calibration code is provided in the repository. When mounting the camera, we recommend placing the camera on a boom behind the lidar to reduce lidar FOV blockage. Potential applications of adding cameras to the vehicle include running a semantic segmentation model for people and scene understanding and a vision-language model for human-robot interactions as well as autonomous navigation guidance.
 
-.. image:: ./images/image32.png
+.. image:: ./images/image32.jpg
     :width: 25%
 
 Adding Manipulation Arm
@@ -31,7 +31,7 @@ Adding Manipulation Arm
 
 Users can add a manipulation arm to the vehicle. We recommend selecting arms no more than 5kg. With an arm installed, when the vehicle approaches an object and tries to grasp the object, users may need to locally re-position the vehicle for the ease of grasping the object. For this purpose, please try `this open-source ROS package <https://github.com/jizhang-cmu/gadgets/tree/jazzy/local_movement>`_ to move the vehicle around in short and direct movements.
 
-.. image:: ./images/image33.png
+.. image:: ./images/image33.jpg
     :width: 33%
 
 The mounting hole pattern on the vehicle top board is provided. This can help users design an adapter plate to mount the manipulation arm.
@@ -44,6 +44,6 @@ Multi-robot Coordination
 
 A multi-robot coordination system may need to involve `a wireless ad hoc network <https://en.wikipedia.org/wiki/Wireless_ad_hoc_network>`_ for inter-vehicle communication, where each vehicle needs to be installed with a radio node that connects to the network. Compared to a traditional centralized network, a wireless ad hoc network does not require a central router or wireless access point, which allows vehicles to establish a direct point-to-point connection when they are within the wireless communication range. The vehicles can utilize the ad hoc network for data sharing and coordination during autonomous navigation.
 
-.. image:: ./images/image34.png
+.. image:: ./images/image34.jpg
     :width: 55%
 
