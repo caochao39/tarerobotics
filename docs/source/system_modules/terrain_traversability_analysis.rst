@@ -15,11 +15,12 @@ Launch the base autonomy system. In RVIZ, click 'Pannels->Displays' and toggle '
 
 
 .. list-table::
-   :widths: 50 50
+   :widths: 35 20 45 
    :align: center
    :class: no-border
 
    * - .. image:: ../images/image1.jpg
-         :width: 32.5%
+         :width: 100%
+     -
      - .. image:: ../images/image13.jpg
-         :width: 45%
+         :width: 100%
