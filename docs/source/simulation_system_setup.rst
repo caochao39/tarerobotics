@@ -43,7 +43,7 @@ In a terminal, go to the repository folder and launch the system.
 
    ./system_simulation.sh
 
-After seeing data showing up in RVIZ, users can use the 'Waypoint' button to set waypoints and navigate the vehicle around. Note that the waypoints are meant to be relatively close to the vehicle. Setting the waypoint too far can cause the vehicle to get stuck at a dead end. Users can also operate in *smart joystick mode* where the vehicle tries to follow joystick commands and also avoid collisions. To do this, users can use the control panel in RVIZ or the joystick controller. When using the joystick controller, users can also operate in *manual mode* without any collision avoidance. Detailed information about the operations in the three modes is below.
+After seeing data showing up in RVIZ, users can use the 'Waypoint' button to set waypoints and navigate the vehicle around. Note that the waypoints are meant to be in the vicinity of the vehicle and reachable. Setting the waypoint too far can cause the vehicle to get stuck at a dead end. Users can also operate in *smart joystick mode* where the vehicle tries to follow joystick commands and also avoid collisions. To do this, users can use the control panel in RVIZ or the joystick controller. When using the joystick controller, users can also operate in *manual mode* without any collision avoidance. Detailed information about the 3 operating modes. Please check out the `Operation Instruction Videos <https://tarerobotics.readthedocs.io/en/latest/operation_instruction_videos.html>`_ section for video illustration of the operating modes.
 
 .. image:: ./images/image26.jpg
     :width: 80%
