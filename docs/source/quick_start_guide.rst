@@ -25,7 +25,7 @@ The antennas of the wireless HDMI sender are removed for shipping, please open t
 Setting up Control Station
 --------------------------
 
-Please prepare a monitor with HDMI cable and a set of wireless keyboard and mouse. Plug in the wireless keyboard and mouse dongle to the USB hub on the vehicle. Set up a control station by connecting the wireless HDMI receiver to the monitor with the HDMI cable and powering it on with the 5v charger and USB-C cable. Power on the vehicle by turning the switch clockwise all the way to the end and voltage is displayed on the switch. Wait for a minute and the onboard NUC i7 computer desktop should show up on the monitor.
+Please prepare a monitor with HDMI cable and a set of wireless keyboard and mouse. Plug in the wireless keyboard and mouse dongle to the USB hub on the vehicle. Set up a control station by connecting the wireless HDMI receiver to the monitor with the HDMI cable and powering it on with the 5v charger and USB-C cable. Power on the vehicle by turning the switch clockwise all the way to the end and voltage is displayed on the switch. Wait for a minute and the onboard vehicle NUC computer desktop should show up on the monitor.
 
 .. image:: ./images/image37.jpg
     :width: 80%
@@ -54,5 +54,37 @@ Launch system with exploration planner:
 
 .. image:: ./images/image41.jpg
     :width: 75%
+
+Operating Modes
+---------------
+
+*Smart joystick mode (default)*: The vehicle tries to follow joystick commands and also avoid collisions. Use the control panel in RVIZ or the right joystick on the controller to set the speed and yaw rate. If the system is in another mode, doing so will switch the system to smart joystick mode.
+
+*Waypoint mode*: The vehicle tries to follow waypoints and also avoid collisions. Use the 'Waypoint' button in RVIZ to set a waypoint by first clicking the button and then clicking where the waypoint is to be set around the vehicle. If the system is in another mode, clicking the 'Resume Navigation to Goal' button in RVIZ switches the system to waypoint mode. Or, users can hold the 'waypoint-mode' button on the controller and use the right joystick to set the speed. If only holding the 'waypoint-mode' button, the system will use the speed sent in ROS messages.
+
+*Manual mode*: The vehicle tries to follow joystick commands without any collision avoidance. Pressing the 'manual-mode' button on the controller switches the system to manual mode. Then, use the right joystick to set the forward and lateral speed and the left joystick to set the yaw rate, in the Mode 2 convention.
+
+|pic1| |pic2|
+
+.. |pic1| image:: ../images/image15.jpg
+    :width: 55% 
+
+.. |pic2| image:: ../images/image21.jpg
+    :width: 30%
+
+Notes
+-----
+
+The battery when fully charged is at 29v and when empty is at 24v. When charging the battery, please make sure to stop the system so the vehicle will not drive.
+
+Please avoid downward staircases. The system does not recognize it and can fall off the stairs.
+
+If the vehicle gets stuck and cannot move, try pressing the 'clear-terrain-map button' on the joystick controller.
+
+When powering off the vehicle, we recommend first powering off the onboard vehicle NUC computer from the control station. Then, turn off the switch on the vehicle.
+
+The joystick controller has multiple modes. If the mode is accidentally changed, please change it back to the default mode (top 2 and bottom 2 status LEDs on).
+
+The username and password of the vehicle NUC computer are both ‘all’
 
 
