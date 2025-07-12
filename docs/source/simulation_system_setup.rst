@@ -64,6 +64,17 @@ After seeing data showing up in RVIZ, users can use the 'Waypoint' button to set
 .. |pic2| image:: ./images/image21.jpg
     :width: 30%
 
+.. list-table::
+   :widths: 65 35 
+   :align: center
+   :class: no-border
+
+   * - .. image:: ../images/image15.jpg
+         :width: 100%
+     - .. image:: ../images/image21.jpg
+         :width: 100%
+
+
 Alternatively, users can run a ROS node to send a series of waypoints. In another terminal, go to the folder and source the ROS workspace, then run the ROS node with the command lines below. The ROS node sends navigation boundary and speed as well. Click the 'Resume Navigation to Goal' button in RVIZ, and the vehicle will navigate inside the boundary following the waypoints.
 
 .. code-block:: console
