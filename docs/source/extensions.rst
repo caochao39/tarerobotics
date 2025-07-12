@@ -16,7 +16,7 @@ If adding a Jetson AGX Orin computer, open the front and back panels on the vehi
 .. image:: ./images/image31.jpg
     :width: 55%
 
-Alternatively, users can set up the autonomy stack on the add-on AI computer. Follow instructions in the `Ubuntu System Setup <https://tarerobotics.readthedocs.io/en/latest/other_useful_information/ubuntu_system_setup.html>`_ section. Then, unplug all the HDMI/Ethernet/USB cables as well as the joystick controller dongle from the vehicle NUC computer and plug them into the add-on AI computer. Now, users can launch the entire system on the add-on AI computer.
+Alternatively, users can set up the autonomy stack and configure Ethernet IP on the add-on AI computer. Follow instructions in the `Ubuntu System Setup <https://tarerobotics.readthedocs.io/en/latest/other_useful_information/ubuntu_system_setup.html>`_ section. Then, unplug all the HDMI/Ethernet/USB cables as well as the joystick controller dongle from the vehicle NUC computer and plug them into the add-on AI computer. Now, users can launch the entire system on the add-on AI computer.
 
 Adding Camera
 -------------
