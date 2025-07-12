@@ -32,7 +32,7 @@ In a terminal, go to the folder, checkout the 'jazzy' branch, and compile. Note 
     git checkout jazzy
     colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release --packages-skip arise_slam_mid360 arise_slam_mid360_msgs livox_ros_driver2
 
-Download `a Unity environment model <https://drive.google.com/drive/folders/1G1JYkccvoSlxyySuTlPfvmrWoJUO8oSs?usp=sharing>`_ and unzip the files to the `src/base_autonomy/vehicle_simulator/mesh/unity <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/tree/jazzy/src/base_autonomy/vehicle_simulator/mesh/unity>`_ folder. The environment model files should look like below. For computers without a powerful GPU, please try the 'without_360_camera' version for a higher rendering rate.
+Download `a Unity environment model <https://drive.google.com/drive/folders/1G1JYkccvoSlxyySuTlPfvmrWoJUO8oSs?usp=sharing>`_ and unzip the files to the `autonomy_stack_mecanum_wheel_platform/src/base_autonomy/vehicle_simulator/mesh/unity <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/tree/jazzy/src/base_autonomy/vehicle_simulator/mesh/unity>`_ folder. The environment model files should look like below. For computers without a powerful GPU, please try the 'without_360_camera' version for a higher rendering rate.
 
 .. image:: ../images/image25.png
     :width: 35%
