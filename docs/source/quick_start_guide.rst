@@ -38,7 +38,7 @@ The PS3 controller dongle may not be recognized correctly after the vehicle is p
 Launching System
 ----------------
 
-From the control station, use the 3 desktop buttons to launch the system. Double-click the button named ‘start_system.desktop’ to launch the base autonomy system. Then, use a combination of the 'Waypoint' button and control panel in RVIZ and the joystick controller to operate the system **(make sure the joystick controller is powered on)**. Please follow instructions in the Switching Mode section below to operate the system in *smart joystick mode*, *waypoint mode*, and *manual mode*. To launch the system with route planner, use the button named ‘start_system_with_route_planner.desktop’ and send a goal point with the 'Goalpoint' button in RVIZ. To launch the system with exploration planner, use the button named ‘start_system_with_exploration_planner.desktop’ and click the 'Resume Navigation to Goal' button in RVIZ to start the exploration.
+From the control station, use the 3 desktop buttons to launch the system. Double-click the button named 'start_system.desktop' to launch the base autonomy system. Then, use a combination of the 'Waypoint' button and control panel in RVIZ and the joystick controller to operate the system **(make sure the joystick controller is powered on)**. Please follow instructions in the Switching Mode section below to operate the system in *smart joystick mode*, *waypoint mode*, and *manual mode*. To launch the system with route planner, use the button named 'start_system_with_route_planner.desktop' and send a goal point with the 'Goalpoint' button in RVIZ. To launch the system with exploration planner, use the button named 'start_system_with_exploration_planner.desktop' and click the 'Resume Navigation to Goal' button in RVIZ to start the exploration. Please check out the `Operation Instruction Videos <https://tarerobotics.readthedocs.io/en/latest/operation_instruction_videos.html>`_ section.
 
 Launch base autonomy system:
 
@@ -57,6 +57,8 @@ Launch system with exploration planner:
 
 Operating Modes
 ---------------
+
+Please check out the `Operation Instruction Videos <https://tarerobotics.readthedocs.io/en/latest/operation_instruction_videos.html>`_ section for video illustration of the operating modes.
 
 *Smart joystick mode (default)*: The vehicle tries to follow joystick commands and also avoid collisions. Use the control panel in RVIZ or the right joystick on the controller to set the speed and yaw rate. If the system is in another mode, doing so will switch the system to smart joystick mode.
 
@@ -85,6 +87,6 @@ Notes
 
 - The joystick controller has multiple modes. If the mode is accidentally changed, please change it back to the default mode (top 2 and bottom 2 status LEDs on).
 
-- The username and password of the vehicle NUC computer are both ‘all’
+- The username and password of the vehicle NUC computer are both 'all'
 
 
