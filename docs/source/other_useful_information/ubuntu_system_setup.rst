@@ -7,7 +7,7 @@ Power off the vehicle NUC computer, plug in the USB drive, then power on the com
 
 After the installation, connect the vehicle NUC computer to WiFi and update the Ubuntu system, then add username to dialout group and reboot. Note that if the computer username is different from 'all', change the username accordingly in the command lines below.
 
-.. code-block:: RST
+.. code-block:: XML
 
     sudo apt update
     sudo apt upgrade
@@ -18,14 +18,14 @@ Go to 'Settings->Network' and configure the wired network connected to the Mid36
 
 Now, install ROS2 Jazzy following `the instructions on this page <https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html>`_. After the installation, add the ROS installation path to the '~/.bashrc' file and source it in terminal to engage the installation.
 
-.. code-block:: JSON
+.. code-block:: XML
 
     echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
     source ~/.bashrc
 
 Follow the `System Setup <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform?tab=readme-ov-file#system-setup>`_ section in the GitHub repository readme to set up the autonomy stack. Go through the 5 steps from '1) All Dependencies' to '5) Full Repository'. Make sure to configure the Mid360 lidar driver to the specific lidar. In the `'~/autonomy_stack_mecanum_wheel_platform/src/utilities/livox_ros_driver2/config/MID360_config.json' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/utilities/livox_ros_driver2/config/MID360_config.json>`_ file, under the ``lidar_configs`` settings, set the lidar IP to 192.168.1.1xx, where xx are the last two digits of the lidar serial number. You can find it on a sticker under a QR code on the lidar. Pin the lidar to double-check its IP. 
 
-.. code-block:: HTML
+.. code-block:: XML
 
     ping 192.168.1.1xx
 
@@ -33,7 +33,7 @@ After setting up the autonomy stack, you may follow the `System Usage <https://g
 
 Copy the icon image to the home folder and 3 desktop buttons onto the desktop. On the desktop, right-click each of the 3 desktop buttons and ‘Allow Launching’ to enable them. Now, you may double-click any of the desktop buttons to launch the system in the 3 modes. Note that if the computer username is different from 'all' or the autonomy stack is not in the default home folder, open the 3 desktop buttons in a text editor and modify the links in them. Each desktop button contains 2 links, one to the system startup script and the other to the icon image.
 
-.. code-block:: python
+.. code-block:: XML
 
    cd ~/autonomy_stack_mecanum_wheel_platform
    cp ./desktop_buttons/start.png ~/
