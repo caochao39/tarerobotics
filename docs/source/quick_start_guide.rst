@@ -6,14 +6,6 @@ Opening Box
 
 The box contains the Mecanum wheel vehicle, battery charger, joystick controller, wireless HDMI receiver, TX60 split cable, TX60 to 5.5mmx2.5mm DC cable, USB-A to Ethernet adapter, USB-C to USB-A adapter, Ethernet cable, 2x 5v chargers, 2x USB-C cables, dummy HDMI plug, and 2x bungee cords. **Please make sure to charge the vehicle battery fully.**
 
-|pic1| |pic2|
-
-.. |pic1| image:: ./images/image42.jpg
-   :width: 33.5% 
-
-.. |pic2| image:: ./images/image43.jpg
-   :width: 55%
-
 .. list-table::
    :widths: 38 62 
    :align: center
@@ -84,6 +76,16 @@ Please check out the `Operation Instruction Videos <https://tarerobotics.readthe
 
 .. |pic4| image:: ./images/image21.jpg
     :width: 30%
+
+.. list-table::
+   :widths: 65 35 
+   :align: center
+   :class: no-border
+
+   * - .. image:: ./images/image15.jpg
+         :width: 100%
+     - .. image:: ./images/image21.jpg
+         :width: 100%
 
 Notes
 -----
