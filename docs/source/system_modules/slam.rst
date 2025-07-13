@@ -31,7 +31,7 @@ Once a point cloud file is saved, users can start the SLAM module in localizatio
 If the point cloud file is large, the system will take several seconds to a minute to load the prior map. Users can manually downsample the point cloud file to save the system startup time. We recommend using `CloudCompare <https://www.danielgm.net/cc/>`_ (installed on the vehicle NUC computer). Start the software and open the 'pointcloud_local.txt' file. Load all five columns by default and click 'Apply'.
 
 .. image:: ../images/image17.jpg
-    :width: 85%
+    :width: 90%
     :align: center
 
 |

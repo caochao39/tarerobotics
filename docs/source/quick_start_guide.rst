@@ -22,7 +22,7 @@ Installing Antennas and Dongle
 The antennas of the wireless HDMI sender are removed for shipping. Please open the rear panel of the vehicle and install the antennas. Then, use zip ties to secure the antennas at a fixed angle. Also, plug in the joystick controller dongle to the USB hub on the vehicle. The joystick controller dongle, antennas, and zip ties are included in the box.
 
 .. image:: ./images/image36.jpg
-    :width: 80%
+    :width: 83%
     :align: center
 
 |
@@ -33,7 +33,7 @@ Setting up Control Station
 Please prepare a monitor with HDMI cable and a set of wireless keyboard and mouse. Plug in the wireless keyboard and mouse dongle to the USB hub on the vehicle. Set up a control station by connecting the wireless HDMI receiver to the monitor with the HDMI cable and powering it on with the 5v charger and USB-C cable. Power on the vehicle by turning the switch clockwise all the way to the end and voltage is displayed on the switch. Wait for a minute and the vehicle NUC computer desktop should show up on the monitor.
 
 .. image:: ./images/image37.jpg
-    :width: 90%
+    :width: 93%
     :align: center
 
 |
@@ -41,7 +41,7 @@ Please prepare a monitor with HDMI cable and a set of wireless keyboard and mous
 The joystick controller dongle may not be recognized correctly after the vehicle is powered on. **Please unplug and re-plug in the joystick controller dongle once after powering on the vehicle for it to be recognized correctly. Once recognized correctly, the top 2 and bottom 2 status LEDs on the joystick controller should be on (press the center button on the joystick controller to turn it on).**
 
 .. image:: ./images/image38.jpg
-    :width: 55%
+    :width: 52%
     :align: center
 
 |

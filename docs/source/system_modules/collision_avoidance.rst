@@ -6,7 +6,7 @@ The collision avoidance planner warrants safety in reaching waypoints that are s
 Launch the base autonomy system and use the 'Waypoint' button in RVIZ to set a waypoint in the vicinity of the vehicle. Make sure the waypoint is reachable. Users should see yellow collision-free paths in RVIZ while the vehicle approaches the waypoint. The magenta ball is the waypoint.
 
 .. image:: ../images/image6.jpg
-    :width: 80%
+    :width: 75%
     :align: center
 
 |
