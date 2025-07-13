@@ -1,5 +1,5 @@
-Ubuntu System Setup
-===================
+Vehicle NUC Computer Setup
+==========================
 
 This section contains information to set up Ubuntu system and the autonomy stack on the vehicle NUC computer from scratch, using Ubuntu 24.04 as an example. Download the latest Ubuntu 24.04 installation image, namely 'ubuntu-24.04.x-desktop-amd64.iso' `from this page <https://releases.ubuntu.com/noble>`_. Find a USB drive and an Ubuntu computer (can use the vehicle NUC computer). Go to the 'App Center' on the Ubuntu computer and install 'Startup Disk Creator'. Launch the app, select the installation image and the USB drive, and 'Make Startup Disk'.
 

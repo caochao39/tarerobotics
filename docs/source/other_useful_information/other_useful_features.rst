@@ -54,4 +54,4 @@ In another terminal, source the ROS workspace (required) and play the bagfile.
   $ source autonomy_stack_mecanum_wheel_platform/install/setup.bash
   $ ros2 bag play 'bagfolder_path/bagfile_name.mcap (or bagfile_name.db3)'
 
-`A few example bagfiles are provided here. <https://drive.google.com/drive/folders/1G1JYkccvoSlxyySuTlPfvmrWoJUO8oSs?usp=sharing>`_ Users can use the bagfiles to test the system offline without accessing the real-robot setup. For bagfile processing, please follow the `Ubuntu System Setup <https://tarerobotics.readthedocs.io/en/latest/other_useful_information/ubuntu_system_setup.html>`_ section to set up the system and autonomy stack.
+`A few example bagfiles are provided here. <https://drive.google.com/drive/folders/1G1JYkccvoSlxyySuTlPfvmrWoJUO8oSs?usp=sharing>`_ Users can use the bagfiles to test the system offline without accessing the real-robot setup. For bagfile processing, please follow the `Vehicle NUC Computer Setup <https://tarerobotics.readthedocs.io/en/latest/other_useful_information/vehicle_nuc_computer_setup.html>`_ section to set up the system and autonomy stack.
