@@ -22,7 +22,7 @@ The box contains the Mecanum wheel vehicle, battery charger, joystick controller
    * - .. image:: ./images/image42.jpg
          :width: 100%
      - .. image:: ./images/image43.jpg
-         :width: 100%
+         :width: 96%
 
 
 Installing Antennas and Dongle
