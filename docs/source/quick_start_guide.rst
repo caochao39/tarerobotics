@@ -38,7 +38,7 @@ Please prepare a monitor with HDMI cable and a set of wireless keyboard and mous
 
 |
 
-The joystick controller dongle may not be recognized correctly after the vehicle is powered on. **Please unplug and re-plug in the joystick controller dongle once after powering on the vehicle for it to be recognized correctly. Once recognized correctly, the top 2 and bottom 2 status LEDs on the joystick controller should be on (press the center button on the joystick controller to turn it on).**
+The joystick controller dongle may not be recognized correctly after the vehicle is powered on. **Please unplug and re-plug in the joystick controller dongle once after powering on the vehicle for it to be recognized correctly. Once recognized correctly, the top two and bottom two status LEDs on the joystick controller should be on (press the center button on the joystick controller to turn it on).**
 
 .. image:: ./images/image38.jpg
     :width: 50%
@@ -107,7 +107,7 @@ Notes
 
 - When powering off the vehicle, we recommend first powering off the vehicle NUC computer from the control station. Then, turn off the switch on the vehicle.
 
-- The joystick controller has multiple modes. If the mode is accidentally changed, please change it back to the default mode (top 2 and bottom 2 status LEDs on).
+- The joystick controller has multiple modes. If the mode is accidentally changed, please change it back to the default mode (top two and bottom two status LEDs on).
 
 - The username and password of the vehicle NUC computer are both 'all'
 
