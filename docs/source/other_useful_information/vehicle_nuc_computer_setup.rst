@@ -5,7 +5,7 @@ This section contains information to set up Ubuntu system and the autonomy stack
 
 Power off the vehicle NUC computer, plug in the USB drive, then power on the computer while pressing F10 to enter boot menu. Select the USB drive and follow the step-by-step instructions to install Ubuntu 24.04. Erase the original Ubuntu system and use the entire SSD for the new Ubuntu installation. Set computer name to 'sensorpod', and both username and password to 'all'.
 
-After the installation, connect the vehicle NUC computer to WiFi and update the Ubuntu system, then add username to dialout group and reboot. Note that if the computer username is different from 'all', change the username accordingly in the command lines below.
+After the installation, connect the vehicle NUC computer to WiFi and update the Ubuntu system, then add username to the dialout group and reboot. Note that if the computer username is different from 'all', change the username accordingly in the command lines below.
 
 .. code-block:: console
 
