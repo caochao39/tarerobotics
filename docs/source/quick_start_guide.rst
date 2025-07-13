@@ -38,7 +38,7 @@ Please prepare a monitor with HDMI cable and a set of wireless keyboard and mous
 
 |
 
-The joystick controller dongle may not be recognized correctly after the vehicle is powered on. **Please unplug and re-plug in the joystick controller dongle once after powering on the vehicle for it to be recognized correctly. Once recognized correctly, the top 2 and bottom 2 status LEDs on the joystick controller should be on** (press the center button on the joystick controller to turn it on).
+The joystick controller dongle may not be recognized correctly after the vehicle is powered on. **Please unplug and re-plug in the joystick controller dongle once after powering on the vehicle for it to be recognized correctly. Once recognized correctly, the top 2 and bottom 2 status LEDs on the joystick controller should be on (press the center button on the joystick controller to turn it on).**
 
 .. image:: ./images/image38.jpg
     :width: 45%
