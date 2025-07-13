@@ -38,7 +38,7 @@ Please prepare a monitor with HDMI cable and a set of wireless keyboard and mous
 
 |
 
-The PS3 controller dongle may not be recognized correctly after the vehicle is powered on. **Please unplug and re-plug in the PS3 controller dongle once after powering on the vehicle for it to be recognized correctly. Once recognized correctly, the top 2 and bottom 2 status LEDs on the PS3 controller should be on (press the center button on the joystick controller to turn it on).**
+The joystick controller dongle may not be recognized correctly after the vehicle is powered on. **Please unplug and re-plug in the joystick controller dongle once after powering on the vehicle for it to be recognized correctly. Once recognized correctly, the top 2 and bottom 2 status LEDs on the joystick controller should be on** (press the center button on the joystick controller to turn it on).
 
 .. image:: ./images/image38.jpg
     :width: 45%
@@ -49,9 +49,9 @@ The PS3 controller dongle may not be recognized correctly after the vehicle is p
 Launching System
 ----------------
 
-From the control station, use the 3 desktop buttons to launch the system. Double-click the button named 'start_system.desktop' to launch the base autonomy system. Then, use a combination of the 'Waypoint' button and control panel in RVIZ and the joystick controller to operate the system **(make sure the joystick controller is powered on)**. Please follow instructions in the Switching Mode section below to operate the system in *smart joystick mode*, *waypoint mode*, and *manual mode*. To launch the system with route planner, use the button named 'start_system_with_route_planner.desktop' and send a goal point with the 'Goalpoint' button in RVIZ. To launch the system with exploration planner, use the button named 'start_system_with_exploration_planner.desktop' and click the 'Resume Navigation to Goal' button in RVIZ to start the exploration. Please check out the `Operation Instruction Videos <https://tarerobotics.readthedocs.io/en/latest/operation_instruction_videos.html>`_ section.
+From the control station, use the three desktop buttons to launch the system. Double-click the button named 'start_system.desktop' to launch the base autonomy system. Then, use a combination of the 'Waypoint' button and control panel in RVIZ and the joystick controller to operate the system (make sure the joystick controller is powered on). Please follow instructions in the Switching Mode section below to operate the system in *smart joystick mode*, *waypoint mode*, and *manual mode*. To launch the system with route planner, use the button named 'start_system_with_route_planner.desktop' and send a goal point with the 'Goalpoint' button in RVIZ. To launch the system with exploration planner, use the button named 'start_system_with_exploration_planner.desktop' and click the 'Resume Navigation to Goal' button in RVIZ to start the exploration. Please check out the `Operation Instruction Videos <https://tarerobotics.readthedocs.io/en/latest/operation_instruction_videos.html>`_ section.
 
-Launch base autonomy system:
+Launching base autonomy system:
 
 .. image:: ./images/image39.jpg
     :width: 75%
@@ -59,7 +59,7 @@ Launch base autonomy system:
 
 |
 
-Launch system with route planner:
+Launching system with route planner:
 
 .. image:: ./images/image40.jpg
     :width: 75%
@@ -67,7 +67,7 @@ Launch system with route planner:
 
 |
 
-Launch system with exploration planner:
+Launching system with exploration planner:
 
 .. image:: ./images/image41.jpg
     :width: 75%
