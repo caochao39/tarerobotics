@@ -26,7 +26,7 @@ Other Useful Features
   $ source autonomy_stack_mecanum_wheel_platform/install/setup.bash
   $ ros2 bag record /imu/data /lidar/scan -o 'bagfolder_path'
 
-To launch the system for bagfile processing, use of the command lines below. For base autonomy system:
+To launch the system for bagfile processing, use the command lines below. For base autonomy system:
 
 .. code-block:: console
 
