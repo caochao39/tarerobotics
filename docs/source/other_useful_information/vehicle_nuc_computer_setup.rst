@@ -23,7 +23,7 @@ Now, install ROS2 Jazzy following the `instructions on this page <https://docs.r
     $ echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
     $ source ~/.bashrc
 
-Follow the `System Setup <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform?tab=readme-ov-file#system-setup>`_ section in the GitHub repository readme to set up the autonomy stack. Go through the five steps from '1) All Dependencies' to '5) Full Repository'. Make sure to configure the Mid360 lidar driver to the specific lidar. In the `'src/utilities/livox_ros_driver2/config/MID360_config.json' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/utilities/livox_ros_driver2/config/MID360_config.json>`_ file, under the ``lidar_configs`` settings, set the lidar IP to 192.168.1.1xx, where xx are the last two digits of the lidar serial number. You can find it on a sticker under a QR code on the lidar. Pin the lidar to double-check its IP. 
+Follow the `System Setup <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform?tab=readme-ov-file#system-setup>`_ section in the repository readme to set up the autonomy stack. Go through the five steps from '1) All Dependencies' to '5) Full Repository'. Make sure to configure the Mid360 lidar driver to the specific lidar. In the `'src/utilities/livox_ros_driver2/config/MID360_config.json' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/utilities/livox_ros_driver2/config/MID360_config.json>`_ file, under the ``lidar_configs`` settings, set the lidar IP to 192.168.1.1xx, where xx are the last two digits of the lidar serial number. You can find it on a sticker under a QR code on the lidar. Pin the lidar to double-check its IP. 
 
 .. code-block:: console
 
@@ -39,7 +39,7 @@ Copy the icon image to the home folder and three desktop buttons onto the deskto
    $ cp ./desktop_buttons/start.png ~/
    $ cp ./desktop_buttons/*.desktop ~/Desktop/
 
-Finally, install a couple more packages. Copy the provided chrony configuration file into the system and restart chrony. This creates a time server on the vehicle NUC computer at IP 10.1.1.100. When connecting to the add-on AI computer, configure the wired network on the vehicle NUC computer connecting to the add-on AI computer to 'Manual' settings, IP at '10.1.1.100', netmask at '255.255.255.0', and gateway at '10.1.1.1'. Now, the vehicle NUC computer can be connected to the add-on AI computer.
+Finally, install a couple more packages. Copy the provided chrony configuration file into the system and restart chrony. This creates a time server on the vehicle NUC computer at IP 10.1.1.100. When connecting to the add-on computer, configure the wired network on the vehicle NUC computer connecting to the add-on computer to 'Manual' settings, IP at '10.1.1.100', netmask at '255.255.255.0', and gateway at '10.1.1.1'. Now, the vehicle NUC computer can be connected to the add-on computer.
 
 .. code-block:: console
 

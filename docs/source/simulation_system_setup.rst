@@ -1,7 +1,7 @@
 Simulation System Setup
 =======================
 
-This section contains instructions to set up the autonomy stack for simulation using Ubuntu 24.04 installed with ROS2 Jazzy (recommended distribution). For other Ubuntu and ROS2 distributions, please refer to the corresponding branches in the `GitHub repository <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform>`_. The system is integrated with `Unity <https://unity.com>`_ environment models.
+This section contains instructions to set up the autonomy stack for simulation using Ubuntu 24.04 installed with ROS2 Jazzy (recommended distribution). For other Ubuntu and ROS2 distributions, please refer to the corresponding branches in the `autonomy stack repository <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform>`_. The system is integrated with `Unity <https://unity.com>`_ environment models.
 
 Base Autonomy System
 --------------------
