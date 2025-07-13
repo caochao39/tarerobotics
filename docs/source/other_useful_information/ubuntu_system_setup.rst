@@ -16,7 +16,7 @@ After the installation, connect the vehicle NUC computer to WiFi and update the 
 
 Go to 'Settings->Network' and configure the wired network connected to the Mid360 lidar to 'Manual' settings, IP at '192.168.1.5', netmask at '255.255.255.0', and gateway at '192.168.1.1'. Go to 'Settings->Power' and choose 'Performance', set 'Screen Blank' to 'Never', 'Automatic Suspend' to 'Off', and 'Power Button Behavior' to 'Power Off'.
 
-Now, install ROS2 Jazzy following `the instructions on this page <https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html>`_. After the installation, add the ROS installation path to the '~/.bashrc' file and source it in terminal to engage the installation.
+Now, install ROS2 Jazzy following the `instructions on this page <https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html>`_. After the installation, add the ROS installation path to the '~/.bashrc' file and source it in terminal to engage the installation.
 
 .. code-block:: console
 

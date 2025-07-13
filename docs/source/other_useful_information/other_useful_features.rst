@@ -7,13 +7,15 @@ Other Useful Features
     :width: 45%
     :align: center
 
+|
+
 **Turning on/off collision checking:** Users can send a ROS Bool typed message on the '/check_obstacle' topic to turn on/off collision checking during navigation.
 
 **Safety stopping:** To introduce a safety stop during navigation, send a ROS Int8 typed message on the '/stop' topic. The value being 1 means no moving but turning in one place is allowed, and the value being 2 means no moving or turning. To release the safety stop, send 0.
 
-**Adjusting speed:** To change the speed during navigation, send a ROS Float32 typed message on the '/speed' topic. The value should be between 0-1 as a fraction of the maximum speed.
+**Adjusting speed:** To change the speed during navigation, send a ROS Float32 typed message on the '/speed' topic. The value should be between 0-1 as a fraction of the maximum speed. Example code is provided in the `'src/base_autonomy/waypoint_example' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/tree/jazzy/src/base_autonomy/waypoint_example>`_ package.
 
-**Sending navigation boundary:** Please refer to the example code in the `'src/base_autonomy/waypoint_example' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/tree/jazzy/src/base_autonomy/waypoint_example>`_ package to send navigation boundary. Note that the navigation boundary can include multiple polygons. Points on the same polygon share the same z value. Use different z values for different polygons. Further, to define a closed polygon, the last point needs to repeat the first point. For example, to define a rectangular navigation boundary, use 5 points: 'p1, p2, p3, p4, p1'.
+**Sending navigation boundary:** Please refer to the example code in the `'src/base_autonomy/waypoint_example' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/tree/jazzy/src/base_autonomy/waypoint_example>`_ package to send navigation boundary. Note that the navigation boundary can include multiple polygons. Points on the same polygon share the same z value. Use different z values for each polygon. Further, to define a closed polygon, the last point needs to repeat the first point. For example, to define a rectangular navigation boundary, use 5 points: 'p1, p2, p3, p4, p1'.
 
 **Resetting terrain map:** Occasionally, the terrain map is messed up due to state estimation being unstable, for example. The vehicle cannot find a path and gets stuck. To reset the terrain map, send a ROS Float32 typed message on the '/map_clearing' topic. The value determines the range to clear on the terrain map. Alternatively, users can press the 'clear-terrain-map' button on the joystick controller.
 
@@ -52,4 +54,4 @@ In another terminal, source the ROS workspace (required) and play the bagfile.
   $ source autonomy_stack_mecanum_wheel_platform/install/setup.bash
   $ ros2 bag play 'bagfolder_path/bagfile_name.mcap (or bagfile_name.db3)'
 
-`A few example bagfiles are provided here. <https://drive.google.com/drive/folders/1G1JYkccvoSlxyySuTlPfvmrWoJUO8oSs?usp=sharing>`_ Users can use the bagfiles to test the system offline without accessing the real-robot setup. Note that for bagfile processing, please follow the `Ubuntu System Setup <https://tarerobotics.readthedocs.io/en/latest/other_useful_information/ubuntu_system_setup.html>`_ section to set up the system and autonomy stack.
+`A few example bagfiles are provided here. <https://drive.google.com/drive/folders/1G1JYkccvoSlxyySuTlPfvmrWoJUO8oSs?usp=sharing>`_ Users can use the bagfiles to test the system offline without accessing the real-robot setup. For bagfile processing, please follow the `Ubuntu System Setup <https://tarerobotics.readthedocs.io/en/latest/other_useful_information/ubuntu_system_setup.html>`_ section to set up the system and autonomy stack.
