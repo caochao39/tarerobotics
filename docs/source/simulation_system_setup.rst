@@ -1,7 +1,7 @@
 Simulation System Setup
 =======================
 
-This section contains instructions to set up the autonomy stack for simulation using Ubuntu 24.04 installed with ROS2 Jazzy (recommended distribution). For other Ubuntu and ROS2 distributions, please refer to the corresponding branches in the `autonomy stack repository <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform>`_. The system is integrated with `Unity <https://unity.com>`_ environment models.
+This section contains instructions to set up the autonomy stack for simulation in Ubuntu 24.04 with ROS2 Jazzy (recommended distribution). For other Ubuntu and ROS2 distributions, please refer to the corresponding branches in the `autonomy stack repository <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform>`_. The system is integrated with `Unity <https://unity.com>`_ environment models.
 
 Base Autonomy System
 --------------------
@@ -45,7 +45,7 @@ In a terminal, go to the repository folder and launch the system.
 
    $ ./system_simulation.sh
 
-After seeing data showing up in RVIZ, users can use the 'Waypoint' button to set waypoints and navigate the vehicle around. Note that the waypoints are meant to be in the vicinity of the vehicle and reachable. Setting the waypoint too far can cause the vehicle to get stuck at a dead end. Users can also operate in *smart joystick mode* where the vehicle tries to follow joystick commands and also avoid collisions. To do this, users can use the control panel in RVIZ or the joystick controller. When using the joystick controller, users can also operate in *manual mode* without any collision avoidance. Detailed information about the three operating modes is below. Please check out the `Operation Instruction Videos <https://tarerobotics.readthedocs.io/en/latest/operation_instruction_videos.html>`_ section for video illustration of the operating modes.
+After seeing data showing up in RVIZ, users can use the 'Waypoint' button to set waypoints and navigate the vehicle around. Note that the waypoints are meant to be relatively close to the vehicle. Setting the waypoint too far can cause the vehicle to get stuck at a dead end. Users can also operate in *smart joystick mode* where the vehicle tries to follow joystick commands and also avoid collisions. To do this, users can use the control panel in RVIZ or a PS3/4 or Xbox controller with a USB or Bluetooth interface. When using the joystick controller, users can also operate in *manual mode* without any collision avoidance. Detailed information about the three operating modes is below. Please check out the `Operation Instruction Videos <https://tarerobotics.readthedocs.io/en/latest/operation_instruction_videos.html>`_ section for video illustration of the operating modes.
 
 .. image:: ./images/image26.jpg
     :width: 85%
