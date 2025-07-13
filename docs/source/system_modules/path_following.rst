@@ -5,4 +5,5 @@ The path following module uses pure-pursuit path tracking. Given a path computed
 
 .. figure:: ../images/image10.jpg
     :width: 60%
+    :align: center
 

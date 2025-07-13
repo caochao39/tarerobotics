@@ -5,6 +5,7 @@ Other Useful Features
 
 .. image:: ../images/image29.jpg
     :width: 45%
+    :align: center
 
 **Turning on/off collision checking:** Users can send a ROS Bool typed message on the '/check_obstacle' topic to turn on/off collision checking during navigation.
 

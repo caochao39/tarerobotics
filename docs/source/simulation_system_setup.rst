@@ -38,6 +38,7 @@ Download `a Unity environment model <https://drive.google.com/drive/folders/1G1J
 
 .. image:: ./images/image25.jpg
     :width: 40%
+    :align: center
 
 In a terminal, go to the repository folder and launch the system.
 
@@ -49,6 +50,7 @@ After seeing data showing up in RVIZ, users can use the 'Waypoint' button to set
 
 .. image:: ./images/image26.jpg
     :width: 80%
+    :align: center
 
 - *Smart joystick mode (default)*: The vehicle tries to follow joystick commands and also avoid collisions. Use the control panel in RVIZ or the right joystick on the joystick controller to set the speed and yaw rate. If the system is in another mode, doing so will switch the system to *smart joystick mode*.
 
@@ -87,6 +89,7 @@ Users can send a goal point with the 'Goalpoint' button in RVIZ. The vehicle wil
 
 .. image:: ./images/image27.jpg
     :width: 80%
+    :align: center
 
 When navigating with the route planner, the base autonomy system operates in *waypoint mode*. Users can click in the black box on the control panel to switch to *smart joystick mode*, or press the buttons on a joystick controller to switch to *smart joystick mode* or *manual mode*. To resume route planner navigation, click the 'Resume Navigation to Goal' button in RVIZ or use the 'Goalpoint' button to set a new goalpoint. Or, users can hold the 'waypoint-mode' button on the joystick controller and use the right joystick to set the speed. Please check out the `Operation Instruction Videos <https://tarerobotics.readthedocs.io/en/latest/operation_instruction_videos.html>`_ section.
 
@@ -103,6 +106,7 @@ Click the 'Resume Navigation to Goal' button in RVIZ to start the exploration. U
 
 .. image:: ./images/image28.jpg
     :width: 80%
+    :align: center
 
 When navigating with the exploration planner, the base autonomy system operates in *waypoint mode*. Users can click in the black box on the control panel to switch to smart *joystick mode*, or press the buttons on a joystick controller to switch to *smart joystick mode* or *manual mode*. To resume exploration, click the 'Resume Navigation to Goal' button in RVIZ. Or, users can hold the 'waypoint-mode' button on the joystick controller and use the right joystick to set the speed. Please check out the `Operation Instruction Videos <https://tarerobotics.readthedocs.io/en/latest/operation_instruction_videos.html>`_ section.
 

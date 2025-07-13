@@ -22,26 +22,31 @@ Once a point cloud file is saved, users can start the SLAM module in localizatio
 
 .. image:: ../images/image2.jpg
     :width: 75%
+    :align: center
 
 If the point cloud file is large, the system will take several seconds to a minute to load the prior map. Users can manually downsample the point cloud file to save the system startup time. We recommend using `CloudCompare <https://www.danielgm.net/cc/>`_ (installed on the vehicle NUC computer). Start the software and open the 'pointcloud_local.txt' file. Load all five columns by default and click 'Apply'.
 
 .. image:: ../images/image17.jpg
     :width: 75%
+    :align: center
 
 Then, click the point cloud to select it in the 'DB Tree' window and click the 'Subsample a point cloud' icon in the toolbar. For indoor environments, we recommend downsampling the point cloud to 0.1m resolution. For outdoor environments, use 0.2m. Click 'Ok' to downsample.
 
 .. image:: ../images/image8.jpg
     :width: 30%
+    :align: center
 
 Select the newly created downsampled point cloud in the 'DB Tree' window and save it to file. Make sure to select 'ASCII' cloud at the lower right corner, set the file name, and 'Save'.
 
 .. image:: ../images/image14.jpg
     :width: 55%
+    :align: center
 
 Then, in the next window, keep the default setting and click 'Ok' to save the file. Now, you can use the downsampled point cloud as the prior map.
 
 .. image:: ../images/image4.jpg
     :width: 35%
+    :align: center
 
 Viewing Map
 ------------
@@ -50,6 +55,7 @@ To check out the save point cloud and trajectory files, also use `CloudCompare <
 
 .. image:: ../images/image22.jpg
     :width: 75%
+    :align: center
 
 
 

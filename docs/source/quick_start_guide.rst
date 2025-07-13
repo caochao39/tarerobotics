@@ -24,6 +24,7 @@ The antennas of the wireless HDMI sender are removed for shipping. Please open t
 
 .. image:: ./images/image36.jpg
     :width: 70%
+    :align: center
 
 Setting up Control Station
 --------------------------
@@ -32,11 +33,13 @@ Please prepare a monitor with HDMI cable and a set of wireless keyboard and mous
 
 .. image:: ./images/image37.jpg
     :width: 80%
+    :align: center
 
 The PS3 controller dongle may not be recognized correctly after the vehicle is powered on. **Please unplug and re-plug in the PS3 controller dongle once after powering on the vehicle for it to be recognized correctly. Once recognized correctly, the top 2 and bottom 2 status LEDs on the PS3 controller should be on (press the center button on the joystick controller to turn it on).**
 
 .. image:: ./images/image38.jpg
     :width: 45%
+    :align: center
 
 Launching System
 ----------------
@@ -47,16 +50,19 @@ Launch base autonomy system:
 
 .. image:: ./images/image39.jpg
     :width: 75%
+    :align: center
 
 Launch system with route planner:
 
 .. image:: ./images/image40.jpg
     :width: 75%
+    :align: center
 
 Launch system with exploration planner:
 
 .. image:: ./images/image41.jpg
     :width: 75%
+    :align: center
 
 Operating Modes
 ---------------
