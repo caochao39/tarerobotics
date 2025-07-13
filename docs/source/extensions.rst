@@ -38,7 +38,7 @@ The hole pattern on the vehicle top board is provided below. If installing compo
 Adding Camera
 -------------
 
-Users can add custom cameras to the vehicle. To assist this, we released an `open-source repository <https://github.com/jizhang-cmu/360_camera>`_ to use the `Ricoh Theta Z1 camera <https://thetaz1.com/en/>`_ as an example. In addition to the camera driver, manual extrinsic and latency calibration code is provided in the repository. When mounting the camera, we recommend placing the camera on a boom behind the lidar to reduce lidar FOV blockage. Potential applications of adding cameras to the vehicle include running a semantic segmentation model for pose detection and scene understanding, and a vision-language model for human-robot interactions as well as autonomous navigation guidance.
+Users can add custom cameras to the vehicle. To assist this, we released an `open-source repository <https://github.com/jizhang-cmu/360_camera>`_ to use the `Ricoh Theta Z1 camera <https://thetaz1.com/en/>`_ as an example. In addition to the camera driver, manual extrinsic and latency calibration code is provided in the repository. When mounting the camera, we recommend placing the camera on a boom behind the lidar to reduce lidar FOV blockage. Potential applications of adding cameras to the vehicle include running a semantic model for pose detection and scene understanding, and a vision-language model for human-robot interactions as well as autonomous navigation guidance.
 
 .. image:: ./images/image32.jpg
     :width: 25%
