@@ -69,14 +69,6 @@ Please check out the `Operation Instruction Videos <https://tarerobotics.readthe
 
 - *Manual mode*: The vehicle tries to follow joystick commands without any collision avoidance. Pressing the 'manual-mode' button on the controller switches the system to manual mode. Then, use the right joystick to set the forward and lateral speed and the left joystick to set the yaw rate, in the Mode 2 convention.
 
-|pic3| |pic4|
-
-.. |pic3| image:: ./images/image15.jpg
-    :width: 55% 
-
-.. |pic4| image:: ./images/image21.jpg
-    :width: 30%
-
 .. list-table::
    :widths: 65 35 
    :align: center
