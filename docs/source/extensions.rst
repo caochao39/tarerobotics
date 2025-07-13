@@ -4,7 +4,7 @@ Extentions
 The vehicle hardware is designed to support advanced AI in mind. Space and power options are provided for users to install a Jetson AGX Orin computer or a gaming laptop. Mounting holes are available on the top board for users to install additional sensors and equipment.
 
 .. image:: ./images/image30.jpg
-    :width: 65%
+    :width: 62%
     :align: center
 
 |
@@ -22,7 +22,7 @@ Alternatively, users can set up the autonomy stack and configure Ethernet IP on 
 The vehicle has a 19v power regulator and a 110v/220v power inverter, both at 400+W rating to power the equipment. Open the front panel on the vehicle. If using the 19v power regulator, find the cable with the '19v output' label connected to the 19v inverter, unplug the cable, and plug in the TX60 split cable and the TX60 to 5.5mmx2.5mm DC cable to bring out the 19v output. To use the 110v/220v power inverter, turn on the inverter switch. Users can plug in the add-on AI computer power supply to the 110v/220v power inverter and keep it inside the vehicle chassis.
 
 .. image:: ./images/image20.jpg
-    :width: 90%
+    :width: 85%
     :align: center
 
 |
