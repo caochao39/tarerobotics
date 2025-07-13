@@ -81,7 +81,7 @@ Alternatively, users can run a ROS node to send a series of waypoints. In anothe
 System with Route Planner
 -------------
 
-The route planner conducts planning in the global environment and guides the vehicle to navigate to a goal point. To launch the system with route planner, use the command line below.
+The route planner conducts planning in the global environment and guides the vehicle to navigate to a goal point. To launch the system with route planner, use the command lines below.
 
 .. code-block:: console
 
@@ -101,7 +101,7 @@ When navigating with the route planner, the base autonomy system operates in *wa
 System with Exploration Planner
 -------------------
 
-The exploration planner conducts planning in the global environment and guides the vehicle to cover the environment. To launch the system with exploration planner, use the command line below.
+The exploration planner conducts planning in the global environment and guides the vehicle to cover the environment. To launch the system with exploration planner, use the command lines below.
 
 .. code-block:: console
 
