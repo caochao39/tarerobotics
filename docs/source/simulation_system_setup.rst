@@ -1,7 +1,7 @@
 Simulation System Setup
 =======================
 
-This section contains instructions to set up our autonomy stack for simulation using Ubuntu 24.04 with `ROS2 Jazzy <https://docs.ros.org/en/jazzy/Installation.html>`_ (recommended distribution). For other Ubuntu and ROS2 distributions, please refer to the corresponding branches in the `GitHub repository <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform>`_. The system is integrated with `Unity <https://unity.com>`_ environment models.
+This section contains instructions to set up the autonomy stack for simulation using Ubuntu 24.04 installed with `ROS2 Jazzy <https://docs.ros.org/en/jazzy/Installation.html>`_ (recommended distribution). For other Ubuntu and ROS2 distributions, please refer to the corresponding branches in the `GitHub repository <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform>`_. The system is integrated with `Unity <https://unity.com>`_ environment models.
 
 Base Autonomy System
 --------------------
@@ -38,7 +38,6 @@ Download `a Unity environment model <https://drive.google.com/drive/folders/1G1J
 
 .. image:: ./images/image25.jpg
     :width: 40%
-    :align: center
 
 In a terminal, go to the repository folder and launch the system.
 
@@ -51,6 +50,8 @@ After seeing data showing up in RVIZ, users can use the 'Waypoint' button to set
 .. image:: ./images/image26.jpg
     :width: 80%
     :align: center
+
+|
 
 - *Smart joystick mode (default)*: The vehicle tries to follow joystick commands and also avoid collisions. Use the control panel in RVIZ or the right joystick on the joystick controller to set the speed and yaw rate. If the system is in another mode, doing so will switch the system to *smart joystick mode*.
 
@@ -73,6 +74,7 @@ Alternatively, users can run a ROS node to send a series of waypoints. In anothe
 
 .. code-block:: console
 
+    $ cd autonomy_stack_mecanum_wheel_platform
     $ source install/setup.sh
     $ ros2 launch waypoint_example waypoint_example.launch
 
@@ -83,6 +85,7 @@ The route planner conducts planning in the global environment and guides the veh
 
 .. code-block:: console
 
+    $ cd autonomy_stack_mecanum_wheel_platform
     $ ./system_simulation_with_route_planner.sh
 
 Users can send a goal point with the 'Goalpoint' button in RVIZ. The vehicle will navigate to the goal and build a visibility graph (in cyan) along the way. Areas covered by the visibility graph become free space. When navigating in free space, the planner uses the built visibility graph, and when navigating in unknown space, the planner attempts to discover a way to the goal. By pressing the 'Reset Visibility Graph' button, the planner will reinitialize the visibility graph. By unchecking the 'Planning Attemptable' checkbox, the planner will first try to find a path through the free space. The path will show in green. If such a path does not exist, the planner will consider unknown space together. The path will show in blue (shown in the figure). By unchecking the 'Update Visibility Graph' checkbox, the planner will stop updating the visibility graph. Use the 'Save' buttons to save the visibility graph to file and the 'Read' button to load it.
@@ -90,6 +93,8 @@ Users can send a goal point with the 'Goalpoint' button in RVIZ. The vehicle wil
 .. image:: ./images/image27.jpg
     :width: 80%
     :align: center
+
+|
 
 When navigating with the route planner, the base autonomy system operates in *waypoint mode*. Users can click in the black box on the control panel to switch to *smart joystick mode*, or press the buttons on a joystick controller to switch to *smart joystick mode* or *manual mode*. To resume route planner navigation, click the 'Resume Navigation to Goal' button in RVIZ or use the 'Goalpoint' button to set a new goalpoint. Or, users can hold the 'waypoint-mode' button on the joystick controller and use the right joystick to set the speed. Please check out the `Operation Instruction Videos <https://tarerobotics.readthedocs.io/en/latest/operation_instruction_videos.html>`_ section.
 
@@ -100,6 +105,7 @@ The exploration planner conducts planning in the global environment and guides 
 
 .. code-block:: console
 
+    $ cd autonomy_stack_mecanum_wheel_platform
     $ ./system_simulation_with_exploration_planner.sh
 
 Click the 'Resume Navigation to Goal' button in RVIZ to start the exploration. Users can adjust the navigation boundary to constrain the areas to explore by updating the boundary polygon in the `'src/exploration_planner/tare_planner/data/boundary.ply' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/exploration_planner/tare_planner/data/boundary.ply>`_ file. Also, set ``use_boundary = true`` in the `'src/exploration_planner/tare_planner/launch/explore_world.launch' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/exploration_planner/tare_planner/launch/explore_world.launch>`_ file to tune on exploration boundary.
@@ -107,6 +113,8 @@ Click the 'Resume Navigation to Goal' button in RVIZ to start the exploration. U
 .. image:: ./images/image28.jpg
     :width: 80%
     :align: center
+
+|
 
 When navigating with the exploration planner, the base autonomy system operates in *waypoint mode*. Users can click in the black box on the control panel to switch to smart *joystick mode*, or press the buttons on a joystick controller to switch to *smart joystick mode* or *manual mode*. To resume exploration, click the 'Resume Navigation to Goal' button in RVIZ. Or, users can hold the 'waypoint-mode' button on the joystick controller and use the right joystick to set the speed. Please check out the `Operation Instruction Videos <https://tarerobotics.readthedocs.io/en/latest/operation_instruction_videos.html>`_ section.
 
