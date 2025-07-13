@@ -5,11 +5,13 @@ T-Bot is a versatile education and research platform equipped with a `Livox Mid3
 
 .. image:: images/image7.jpg
     :width: 55%
+    :align: center
 
 The autonomy stack shares a three-tier system architecture, containing a SLAM module, a route planner, an exploration planner, and a base autonomy system, where the base autonomy system includes fundamental navigation modules for terrain traversability analysts, collision avoidance, and waypoint following. The system overall is capable of taking a goal point and navigating the vehicle autonomously to the goal point as well as exploring an environment and building a map along the way. Alternatively, the system allows users to use a joystick controller to guide the navigation while the system itself is in charge of collision avoidance.
 
 .. image:: images/image12.jpg
     :width: 65%
+    :align: center
 
 Please refer to the `Quick Start Guide <https://tarerobotics.readthedocs.io/en/latest/quick_start_guide.html>`_ section and the `Operation Instruction Videos <https://tarerobotics.readthedocs.io/en/latest/operation_instruction_videos.html>`_ section to get familiar with the system operations. To try our system in simulation on any computer, refer to the `Simulation System Setup <https://tarerobotics.readthedocs.io/en/latest/simulation_system_setup.html>`_ section.
 
