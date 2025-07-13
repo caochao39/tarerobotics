@@ -7,3 +7,5 @@ The path following module uses pure-pursuit path tracking. Given a path computed
     :width: 60%
     :align: center
 
+|
+

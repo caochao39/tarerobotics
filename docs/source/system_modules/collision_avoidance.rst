@@ -6,8 +6,10 @@ The collision avoidance planner warrants safety in reaching waypoints that are s
 Launch the base autonomy system and use the 'Waypoint' button in RVIZ to set a waypoint in the vicinity of the vehicle. Make sure the waypoint is reachable. Users should see yellow collision-free paths in RVIZ while the vehicle approaches the waypoint. The magenta ball is the waypoint.
 
 .. image:: ../images/image6.jpg
-    :width: 70%
+    :width: 80%
     :align: center
+
+|
 
 Alternatively, the collision avoidance planner can take joystick input. This is equivalent to setting a waypoint very far and only the direction to the waypoint is effective. Users can use the joystick controller or the control panel in RVIZ to navigate the vehicle. The vehicle will avoid collisions. If using the joystick controller, operate the right joystick on it. To resume navigation to the waypoint, click the 'Resume Navigation to Goal' button in RVIZ. Or, users can hold the 'waypoint-mode' button on the joystick controller and use the right joystick to set the speed. Please check out the `Operation Instruction Videos <https://tarerobotics.readthedocs.io/en/latest/operation_instruction_videos.html>`_ section.
 
