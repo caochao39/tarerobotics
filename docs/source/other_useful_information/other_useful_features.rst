@@ -19,6 +19,8 @@ Other Useful Features
 
 **Resetting terrain map:** Occasionally, the terrain map is messed up due to state estimation being unstable, for example. The vehicle cannot find a path and gets stuck. To reset the terrain map, send a `ROS Float32 <https://docs.ros2.org/foxy/api/std_msgs/msg/Float32.html>`_ typed message on the '/map_clearing' topic. The value determines the range to clear on the terrain map. Alternatively, users can press the 'clear-terrain-map' button on the joystick controller.
 
+**Configuring for differential/skid-steer platforms:** The autonomy stack supports omnidirectional platforms with Mecanum wheels and differential/skid-steer platforms with standard wheels or tracks. If users migrate the autonomy stack to a differential/skid-steer platform, go to the `'src/base_autonomy/local_planner/launch/local_planner.launch' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/base_autonomy/local_planner/launch/local_planner.launch>`_ file and change `config` from 'omniDir' to 'standard'.
+
 **Recording and processing bagfiles:** To record the sensor data to a bagfile, source the ROS workspace in a terminal (due to custom format for the scan messages) and use the command lines below while the system is running.
 
 .. code-block:: console
