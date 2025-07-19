@@ -101,7 +101,7 @@ Notes
 
 - The battery when fully charged is at 29v and when empty is at 24v. When charging the battery, please make sure to stop the system so the vehicle will not drive.
 
-- Please avoid downward staircases. The system does not recognize it and can fall off the stairs.
+- Please avoid downward staircases and glass walls. The system does not recognize them and can fall off stairs or hit a glass wall.
 
 - If the vehicle gets stuck and cannot move, try pressing the 'clear-terrain-map button' on the joystick controller.
 
