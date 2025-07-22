@@ -14,7 +14,7 @@ Launch the base autonomy system and users should see vehicle pose and registered
 
 |
 
-To view the map and trajectory in RVIZ, click 'Pannels->Displays' and toggle 'ExploredAreas' and 'Trajectory'. The blue points are the map and the colored curve is the trajectory.
+To view the map and trajectory in RVIZ, click 'Panels->Displays' and toggle 'ExploredAreas' and 'Trajectory'. The blue points are the map and the colored curve is the trajectory.
 
 .. image:: ../images/image3.jpg
     :width: 85%
