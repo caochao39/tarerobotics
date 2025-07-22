@@ -14,6 +14,14 @@ Launch the base autonomy system and users should see vehicle pose and registered
 
 |
 
+To view the map and trajectory in RVIZ, click 'Pannels->Displays' and toggle 'ExploredAreas' and 'Trajectory'. The blue points are the map and the colored curve is the trajectory.
+
+.. image:: ../images/image3.jpg
+    :width: 85%
+    :align: center
+
+|
+
 To save a point cloud file during a run, set ``savePcd = true`` in 
 the `'src/base_autonomy/visualization_tools/launch/visualization_tools.launch' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/base_autonomy/visualization_tools/launch/visualization_tools.launch>`_ file. A 'pointcloud_xxx.txt' file is saved in the `'src/base_autonomy/vehicle_simulator/log' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/tree/jazzy/src/base_autonomy/vehicle_simulator/log>`_ folder, where 'xxx' is the timestamp. To save a trajectory file, set ``saveTraj = true`` and a 'trajectory_xxx.txt' file is saved. The format is described in the 'readme.txt' file in the same folder.
 
