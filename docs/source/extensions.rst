@@ -19,7 +19,7 @@ If adding a Jetson AGX Orin computer, open the front and back panels on the vehi
 
 Alternatively, users can set up the autonomy stack and configure Ethernet IP on the add-on computer. Follow instructions in the `Vehicle NUC Computer Setup <https://tarerobotics.readthedocs.io/en/latest/other_useful_information/vehicle_nuc_computer_setup.html>`_ section. Then, unplug all the HDMI/Ethernet/USB cables as well as the joystick controller dongle from the vehicle NUC computer and plug them into the add-on computer. This way, users can launch the entire system on the add-on computer.
 
-The vehicle has a 19v power regulator and a 110v/220v power inverter, both at 400+W rating to power the equipment. Open the front panel on the vehicle. If using the 19v power regulator, find the cable with the '19v output' label connected to the 19v inverter, unplug the cable, and plug in the TX60 split cable and the TX60 to 5.5mmx2.5mm DC cable to bring out the 19v output. To use the 110v/220v power inverter, turn on the inverter switch. Users can plug in the add-on computer power supply to the 110v/220v power inverter and keep it inside the vehicle chassis.
+The vehicle has a 19v power regulator and a 110v/220v power inverter, both at 500W+ rating to power the equipment. Open the front panel on the vehicle. If using the 19v power regulator, find the cable with the '19v output' label connected to the 19v inverter, unplug the cable, and plug in the TX60 split cable and the TX60 to 5.5mmx2.5mm DC cable to bring out the 19v output. To use the 110v/220v power inverter, turn on the inverter switch. Users can plug in the add-on computer power supply to the 110v/220v power inverter and keep it inside the vehicle chassis.
 
 .. image:: ./images/image20.jpg
     :width: 85%
