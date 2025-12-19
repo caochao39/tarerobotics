@@ -27,7 +27,7 @@ The vehicle has a 19v power regulator and a 110v/220v power inverter, both at 50
 
 |
 
-The hole pattern on the vehicle top board is provided below. If installing components on the top board in the lidar FOV, please change ``blindFront``, ``blindBack``, ``blindLeft``, and ``blindRight`` in the `'src/slam/arise_slam_mid360/config/livox_mid360.yaml' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/slam/arise_slam_mid360/config/livox_mid360.yaml>`_ file accordingly to exclude the components from lidar sensing.
+The hole pattern on the vehicle top board is provided below. The `CAD model of the vehicle <./cad/tarebot.stl/>`_ is also made available. If installing components on the top board in the lidar FOV, please change ``blindFront``, ``blindBack``, ``blindLeft``, and ``blindRight`` in the `'src/slam/arise_slam_mid360/config/livox_mid360.yaml' <https://github.com/jizhang-cmu/autonomy_stack_mecanum_wheel_platform/blob/jazzy/src/slam/arise_slam_mid360/config/livox_mid360.yaml>`_ file accordingly to exclude the components from lidar sensing.
 
 .. image:: ./images/image35.jpg
     :width: 90%
