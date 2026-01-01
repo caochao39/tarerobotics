@@ -99,7 +99,7 @@ Please check out the `Operation Instruction Videos <https://tarerobotics.readthe
 Notes
 -----
 
-- The battery when fully charged is at 29v and when empty is at 24v. When charging the battery, please make sure to stop the system so the vehicle will not drive. If storing the vehicle, please charge the battery at least every 3 months.
+- The battery when fully charged is at 27.5V and when empty is at 25V. When charging the battery, please make sure to stop the system so the vehicle will not drive. Do not leave the vehicle alone when charging. If storing the vehicle, please charge the battery at least every 3 months.
 
 - Please avoid downward staircases and glass walls. The system does not recognize them and can fall off stairs or hit a glass wall.
 
